@@ -1,0 +1,1 @@
+// This will redirect USER to HOME
