@@ -65,96 +65,96 @@ function validateForm() {
     }
 }
 
-const express = require('express');
-const ejs = require('ejs');
-const paypal = require('paypal');
+// const express = require('express');
+// const ejs = require('ejs');
+// const paypal = require('paypal');
 
-paypal.configure({
-    'mode': 'sandbox', //sandbox or live
-    'client_id': 'Ab_xtknbvX11aoyl93a4oyoyYxJ-sinQPzBILawktunp4PxSVoUKfQwCrLJaOfnpiIKxg1hwdYTGp-qC',
-    'client_secret': 'EDMS_HqBDaOG-Q-FBTOaOXVIt24wa-XgdpkIq0mME7hxGNXxTexsEvGHhtflGNQ6WtwEa-tIRos75UH9'
-});
+// paypal.configure({
+//     'mode': 'sandbox', //sandbox or live
+//     'client_id': 'Ab_xtknbvX11aoyl93a4oyoyYxJ-sinQPzBILawktunp4PxSVoUKfQwCrLJaOfnpiIKxg1hwdYTGp-qC',
+//     'client_secret': 'EDMS_HqBDaOG-Q-FBTOaOXVIt24wa-XgdpkIq0mME7hxGNXxTexsEvGHhtflGNQ6WtwEa-tIRos75UH9'
+// });
 
-const app = express();
+// const app = express();
 
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => res.render('index'));
+// app.get('/', (req, res) => res.render('index'));
 
-app.post('pay', (req, res) => {
-    const create_payment_json = {
-        "intent": "sale",
-        "payer": {
-            "payment_method": "paypal"
-        },
-        // Redirect assumption for http-server
-        "redirect_urls": {
-            "return_url": "http://localhost:8080/success",
-            "cancel_url": "http://localhost:8080/cancel"
-        },
-        "transactions": [{
-            "item_list": {
-                "items": [{
-                    "name": "Donation",
-                    "sku": "001",
-                    "price": "25.00",
-                    "currency": "USD",
-                    "quantity": 1
-                }]
-            },
-            "amount": {
-                "currency": "USD",
-                "total": "25.00"
-            },
-            "description": "TwoFlower Donation"
-        }]
-    };
-    paypal.payment.create(create_payment_json, function(error, payment) {
-        if (error) {
-            throw error;
-        } else {
-            for (let i = 0; 1 < payment.links.length; i++) {
-                if (payment.links[i].rel === 'approval_url') {
-                    res.redirect(payment.links[i].href);
-                }
-            }
-            // console.log("Create Payment Response");
-            // console.log(payment);
-            // res.send('test');
-        }
-    });
+// app.post('pay', (req, res) => {
+//     const create_payment_json = {
+//         "intent": "sale",
+//         "payer": {
+//             "payment_method": "paypal"
+//         },
+//         // Redirect assumption for http-server
+//         "redirect_urls": {
+//             "return_url": "http://localhost:8080/success",
+//             "cancel_url": "http://localhost:8080/cancel"
+//         },
+//         "transactions": [{
+//             "item_list": {
+//                 "items": [{
+//                     "name": "Donation",
+//                     "sku": "001",
+//                     "price": "25.00",
+//                     "currency": "USD",
+//                     "quantity": 1
+//                 }]
+//             },
+//             "amount": {
+//                 "currency": "USD",
+//                 "total": "25.00"
+//             },
+//             "description": "TwoFlower Donation"
+//         }]
+//     };
+//     paypal.payment.create(create_payment_json, function(error, payment) {
+//         if (error) {
+//             throw error;
+//         } else {
+//             for (let i = 0; 1 < payment.links.length; i++) {
+//                 if (payment.links[i].rel === 'approval_url') {
+//                     res.redirect(payment.links[i].href);
+//                 }
+//             }
+//             // console.log("Create Payment Response");
+//             // console.log(payment);
+//             // res.send('test');
+//         }
+//     });
 
-});
+// });
 
-app.get('/success', (req, res) => {
-    const payerId = req.query.PayerID;
-    const paymentID = req.query.paymentId;
+// app.get('/success', (req, res) => {
+//     const payerId = req.query.PayerID;
+//     const paymentID = req.query.paymentId;
 
-    const execute_payment_json = {
-        "payer_id": payerId,
-        "transaction": [{
-            "amount": {
-                "currency": "USD",
-                "total": "25.00"
-            }
-        }]
-    };
+//     const execute_payment_json = {
+//         "payer_id": payerId,
+//         "transaction": [{
+//             "amount": {
+//                 "currency": "USD",
+//                 "total": "25.00"
+//             }
+//         }]
+//     };
 
-    paypal.payment.execute(paymentID, execute_payment_json, function(error, payment) {
-        if (error) {
-            console.log(error.response);
-            throw error;
-        } else {
-            console.log("Get payment response");
-            console.log(JSON.stringify(payment));
-            res.send('success');
-        }
-    });
-});
+//     paypal.payment.execute(paymentID, execute_payment_json, function(error, payment) {
+//         if (error) {
+//             console.log(error.response);
+//             throw error;
+//         } else {
+//             console.log("Get payment response");
+//             console.log(JSON.stringify(payment));
+//             res.send('success');
+//         }
+//     });
+// });
 
-app.get('/cancel', (req, res) => res.send('Cancelled'));
+// app.get('/cancel', (req, res) => res.send('Cancelled'));
 
-app.listen(3000, () => console.log('Server Started'));
+// app.listen(3000, () => console.log('Server Started'));
 
 // INCLUDE ALL EVENT LISTENER CLICKS
 // DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
