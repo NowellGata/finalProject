@@ -132,11 +132,11 @@ function buildNavHTML(stateLinks) {
 }
 
 var _default = function _default(state) {
-  return "\n  <nav>\n  <ul><h2>\n    ".concat(buildNavHTML(state.links), "\n  </h2>\n  </ul>\n  </nav>\n");
+  return "\n  <nav>\n  <ul>\n    ".concat(buildNavHTML(state.links.primary), "\n  </ul>\n  </nav>\n");
 };
 
 exports.default = _default;
-},{}],"components/Content.js":[function(require,module,exports) {
+},{}],"components/pages/Links.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -144,12 +144,377 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _default = function _default() {
-  return "\n\n";
+var _Links = _interopRequireDefault(require("./Links"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = {
+  'pageContent': 'ObitSubmitted',
+  'title': 'ObitSubmitted',
+  'link': _Links.default
+};
+exports.default = _default;
+},{"./Links":"components/pages/Links.js"}],"components/pages/Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Links = _interopRequireDefault(require("./Links"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = function _default(state) {
+  return "\n<h1> TwoFlower</h1>\n<h2> Allowing those that have lost a loved one to grieve proactively.</h2>\n<h3> If you have lost someone dear, press BEREAVED to get started. If you would like to donate time or money to the Bereaved, please press BENEFACTOR</h3>\n<div class= \"choice\">\n  <button onclick=\"bereaved\">BEREAVED<button>\n  <button onclick=\"benefactor\">BENEFACTOR</button>\n</div>\n    \n";
 };
 
 exports.default = _default;
-},{}],"components/Footer.js":[function(require,module,exports) {
+},{"./Links":"components/pages/Links.js"}],"components/pages/Benefactor.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+} // Write HTML in Pages
+
+
+var _default = function _default(state) {
+  return "\n<h1> TwoFlower</h1>\n<h2> Would you like to donate Acts of Kindness or Money to the family of DECEASED?</h2>\n\n<div class= \"beneChoice\">\n  <button onclick=\"beneYes\">Yes</button>\n  <button onclick=\"beneNo\">No</button>\n</div>\n\n";
+};
+
+exports.default = _default;
+},{}],"components/pages/BenefactorDonate.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Help the Bereaved Family with the help of TwoFlower</h1>\n<h3>What Acts of Kindness would you like to promise the Bereaved?</h3>\n<div class= \"formContainer\">\n<form>\n<label for=\"story\">Tell us your story:</label>\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n\n<input type=\"submit\">\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n<form action=\"/action_page.php\">Would you like to send money to help with the funeral?<input type=\"number\" name=\"quantity\" min=\"1\" max=\"5\">\n  <input type=\"submit\"> \n</form>  \n</form>\n</div>\n";
+};
+
+exports.default = _default;
+},{}],"components/pages/BenefactorThanks.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
+};
+
+exports.default = _default;
+},{}],"components/pages/BenefactorForm.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
+};
+
+exports.default = _default;
+},{}],"components/pages/BenefactorYes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
+};
+
+exports.default = _default;
+},{}],"components/pages/BenefactorNope.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Well, thank you for listening!</h1>\n<h2>Death is the reminder that there is life left to live.</h2>\n<h3>Here is a cat gif for your grieving pleasure.</h3>\n<div class=\"kitty\">\n  <img src=\"https://i.imgur.com/C2TyjIS.gif\" name=\"hellokitty\" value=\"cats\">\n</div>\n";
+}; // FEATURE: Implement Cat Gif API to display a random gif of a cat.
+
+
+exports.default = _default;
+},{}],"components/pages/BenefactorName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Do you want to know if you can help?</h1>\n<h3>Please enter the name of the deceased:</h3>\n<div class= \"formContainer\"></div>\n<form name=\"nameValid\" action=\"/action_page.php\" onsubmit=\"return validateForm()\" method=\"post\">\n<input type=\"text\" name=\"firstVerif\" value=\"First Name\">\n<input type=\"text\" name=\"lastVerif\" value=\"Last Name\">\n<input type=\"submit\" value=\"Submit\">\n</form>\n";
+}; // Enter the name of the deceased to access an array of dead people.
+
+
+exports.default = _default;
+},{}],"components/pages/Obituary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>TwoFlower</h1>\n<h2>Obituary for [Deceased Name Here]</h2>\n<h3>This will render the photo of the deceased</h3>\n<h3>This will render the obit</h3>\n<h3>This will render the remainder of the information of the DECEASED</h3>\n";
+};
+
+exports.default = _default;
+},{}],"components/pages/Bereaved.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n\n<h3>Please enter information for the DECEASED</h3>\n<div class=\"obituary\">\n  \n</div class= \"formContainer\">\n  <form action=\"/action_page.php\"> \n  Name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadFirst\" value=\"First Name\">\n  <br>\n  Last name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadLast\" value=\"Last Name\">\n  <br><br>\n <textarea rows=10 cols=50 name=\"obit\" value=\"obit\">Enter a brief obituary</textarea>\n</form> \n  <label for=\"avatar\">Please choose a photo of the DECEASED</label>\n\n<input type=\"file\"\n       id=\"deadPhoto\" name=\"avatar\"\n       accept=\"image/png, image/jpeg\">\n\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n";
+};
+
+exports.default = _default;
+},{}],"components/pages/ObitSubmitted.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Thank you from TwoFlower</h1>\n<h2>Your Acts of Kindness and generous donations will greatly help the grieving family of DECEASED NAME HERE</h2>\n";
+};
+
+exports.default = _default;
+},{}],"components/pages/ObitHomeLink.js":[function(require,module,exports) {
+// This will redirect USER to HOME
+},{}],"components/pages/ObitEmail.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n    \n";
+};
+
+exports.default = _default;
+},{}],"components/pages/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Home", {
+  enumerable: true,
+  get: function () {
+    return _Home.default;
+  }
+});
+Object.defineProperty(exports, "Benefactor", {
+  enumerable: true,
+  get: function () {
+    return _Benefactor.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorDonate", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorDonate.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorThanks", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorThanks.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorForm", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorForm.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorYes", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorYes.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorNope", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorNope.default;
+  }
+});
+Object.defineProperty(exports, "BenefactorName", {
+  enumerable: true,
+  get: function () {
+    return _BenefactorName.default;
+  }
+});
+Object.defineProperty(exports, "Obituary", {
+  enumerable: true,
+  get: function () {
+    return _Obituary.default;
+  }
+});
+Object.defineProperty(exports, "Bereaved", {
+  enumerable: true,
+  get: function () {
+    return _Bereaved.default;
+  }
+});
+Object.defineProperty(exports, "ObitSubmitted", {
+  enumerable: true,
+  get: function () {
+    return _ObitSubmitted.default;
+  }
+});
+Object.defineProperty(exports, "ObitHomeLink", {
+  enumerable: true,
+  get: function () {
+    return _ObitHomeLink.default;
+  }
+});
+Object.defineProperty(exports, "ObitEmail", {
+  enumerable: true,
+  get: function () {
+    return _ObitEmail.default;
+  }
+});
+
+var _Home = _interopRequireDefault(require("./Home"));
+
+var _Benefactor = _interopRequireDefault(require("./Benefactor"));
+
+var _BenefactorDonate = _interopRequireDefault(require("./BenefactorDonate"));
+
+var _BenefactorThanks = _interopRequireDefault(require("./BenefactorThanks"));
+
+var _BenefactorForm = _interopRequireDefault(require("./BenefactorForm"));
+
+var _BenefactorYes = _interopRequireDefault(require("./BenefactorYes"));
+
+var _BenefactorNope = _interopRequireDefault(require("./BenefactorNope"));
+
+var _BenefactorName = _interopRequireDefault(require("./BenefactorName"));
+
+var _Obituary = _interopRequireDefault(require("./Obituary"));
+
+var _Bereaved = _interopRequireDefault(require("./Bereaved"));
+
+var _ObitSubmitted = _interopRequireDefault(require("./ObitSubmitted"));
+
+var _ObitHomeLink = _interopRequireDefault(require("./ObitHomeLink"));
+
+var _ObitEmail = _interopRequireDefault(require("./ObitEmail"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./Home":"components/pages/Home.js","./Benefactor":"components/pages/Benefactor.js","./BenefactorDonate":"components/pages/BenefactorDonate.js","./BenefactorThanks":"components/pages/BenefactorThanks.js","./BenefactorForm":"components/pages/BenefactorForm.js","./BenefactorYes":"components/pages/BenefactorYes.js","./BenefactorNope":"components/pages/BenefactorNope.js","./BenefactorName":"components/pages/BenefactorName.js","./Obituary":"components/pages/Obituary.js","./Bereaved":"components/pages/Bereaved.js","./ObitSubmitted":"components/pages/ObitSubmitted.js","./ObitHomeLink":"components/pages/ObitHomeLink.js","./ObitEmail":"components/pages/ObitEmail.js"}],"components/Content.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var pages = _interopRequireWildcard(require("./pages"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+var _default = function _default(state) {
+  return "\n  <div id=\"bg-container\">\n    ".concat(pages[state.pageContent](state), "\n  </div>");
+};
+
+exports.default = _default;
+},{"./pages":"components/pages/index.js"}],"components/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -171,9 +536,14 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   'primary': [{
-    'text': 'Home'
+    'text': 'Home',
+    'icon': 'fas fa-home'
   }, {
-    'text': 'About'
+    'text': 'About',
+    'icon': 'fas fa-id-card-alt'
+  }, {
+    'text': 'Contact',
+    'icon': 'fas fa-phone'
   }, {
     'text': 'Blog'
   }]
@@ -525,7 +895,7 @@ var _ObitHomeLink = _interopRequireDefault(require("./ObitHomeLink"));
 var _ObitEmail = _interopRequireDefault(require("./ObitEmail"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./Benefactor":"store/Benefactor.js","./BenefactorDonate":"store/BenefactorDonate.js","./BenefactorThanks":"store/BenefactorThanks.js","./BenefactorForm":"store/BenefactorForm.js","./BenefactorYes":"store/BenefactorYes.js","./BenefactorNope":"store/BenefactorNope.js","./BenefactorName":"store/BenefactorName.js","./Obituary":"store/Obituary.js","./Bereaved":"store/Bereaved.js","./ObitSubmitted":"store/ObitSubmitted.js","./ObitHomeLink":"store/ObitHomeLink.js","./ObitEmail":"store/ObitEmail.js"}],"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./Benefactor":"store/Benefactor.js","./BenefactorDonate":"store/BenefactorDonate.js","./BenefactorThanks":"store/BenefactorThanks.js","./BenefactorForm":"store/BenefactorForm.js","./BenefactorYes":"store/BenefactorYes.js","./BenefactorNope":"store/BenefactorNope.js","./BenefactorName":"store/BenefactorName.js","./Obituary":"store/Obituary.js","./Bereaved":"store/Bereaved.js","./ObitSubmitted":"store/ObitSubmitted.js","./ObitHomeLink":"store/ObitHomeLink.js","./ObitEmail":"store/ObitEmail.js"}],"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
 'use strict'
 
 exports.byteLength = byteLength
@@ -678,7 +1048,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/ieee754/index.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/ieee754/index.js":[function(require,module,exports) {
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -764,14 +1134,14 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/isarray/index.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/isarray/index.js":[function(require,module,exports) {
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/buffer/index.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/buffer/index.js":[function(require,module,exports) {
 
 var global = arguments[3];
 /*!
@@ -2564,7 +2934,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/base64-js/index.js","ieee754":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/ieee754/index.js","isarray":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/isarray/index.js","buffer":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
+},{"base64-js":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/base64-js/index.js","ieee754":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/ieee754/index.js","isarray":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/isarray/index.js","buffer":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
 var global = arguments[3];
 var Buffer = require("buffer").Buffer;
 var define;
@@ -19676,7 +20046,7 @@ var define;
   }
 }.call(this));
 
-},{"buffer":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
+},{"buffer":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
 var define;
 !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.Navigo=t()}(this,function(){"use strict";var e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function t(){return!("undefined"==typeof window||!window.history||!window.history.pushState)}function n(e,n,o){this.root=null,this._routes=[],this._useHash=n,this._hash=void 0===o?"#":o,this._paused=!1,this._destroyed=!1,this._lastRouteResolved=null,this._notFoundHandler=null,this._defaultHandler=null,this._usePushState=!n&&t(),this._onLocationChange=this._onLocationChange.bind(this),this._genericHooks=null,this._historyAPIUpdateMethod="pushState",e?this.root=n?e.replace(/\/$/,"/"+this._hash):e.replace(/\/$/,""):n&&(this.root=this._cLoc().split(this._hash)[0].replace(/\/$/,"/"+this._hash)),this._listen(),this.updatePageLinks()}function o(e){return e instanceof RegExp?e:e.replace(/\/+$/,"").replace(/^\/+/,"^/")}function i(e){return e.replace(/\/$/,"").split("/").length}function s(e,t){return i(t)-i(e)}function r(e,t){return function(e){return(arguments.length>1&&void 0!==arguments[1]?arguments[1]:[]).map(function(t){var i=function(e){var t=[];return{regexp:e instanceof RegExp?e:new RegExp(e.replace(n.PARAMETER_REGEXP,function(e,o,i){return t.push(i),n.REPLACE_VARIABLE_REGEXP}).replace(n.WILDCARD_REGEXP,n.REPLACE_WILDCARD)+n.FOLLOWED_BY_SLASH_REGEXP,n.MATCH_REGEXP_FLAGS),paramNames:t}}(o(t.route)),s=i.regexp,r=i.paramNames,a=e.replace(/^\/+/,"/").match(s),h=function(e,t){return 0===t.length?null:e?e.slice(1,e.length).reduce(function(e,n,o){return null===e&&(e={}),e[t[o]]=decodeURIComponent(n),e},null):null}(a,r);return!!a&&{match:a,route:t,params:h}}).filter(function(e){return e})}(e,t)[0]||!1}function a(e,t){var n=t.map(function(t){return""===t.route||"*"===t.route?e:e.split(new RegExp(t.route+"($|/)"))[0]}),i=o(e);return n.length>1?n.reduce(function(e,t){return e.length>t.length&&(e=t),e},n[0]):1===n.length?n[0]:i}function h(e,n,o){var i,s=function(e){return e.split(/\?(.*)?$/)[0]};return void 0===o&&(o="#"),t()&&!n?s(e).split(o)[0]:(i=e.split(o)).length>1?s(i[1]):s(i[0])}function u(t,n,o){if(n&&"object"===(void 0===n?"undefined":e(n))){if(n.before)return void n.before(function(){(!(arguments.length>0&&void 0!==arguments[0])||arguments[0])&&(t(),n.after&&n.after(o))},o);if(n.after)return t(),void(n.after&&n.after(o))}t()}return n.prototype={helpers:{match:r,root:a,clean:o,getOnlyURL:h},navigate:function(e,t){var n;return e=e||"",this._usePushState?(n=(n=(t?"":this._getRoot()+"/")+e.replace(/^\/+/,"/")).replace(/([^:])(\/{2,})/g,"$1/"),history[this._historyAPIUpdateMethod]({},"",n),this.resolve()):"undefined"!=typeof window&&(e=e.replace(new RegExp("^"+this._hash),""),window.location.href=window.location.href.replace(/#$/,"").replace(new RegExp(this._hash+".*$"),"")+this._hash+e),this},on:function(){for(var t=this,n=arguments.length,o=Array(n),i=0;i<n;i++)o[i]=arguments[i];if("function"==typeof o[0])this._defaultHandler={handler:o[0],hooks:o[1]};else if(o.length>=2)if("/"===o[0]){var r=o[1];"object"===e(o[1])&&(r=o[1].uses),this._defaultHandler={handler:r,hooks:o[2]}}else this._add(o[0],o[1],o[2]);else"object"===e(o[0])&&Object.keys(o[0]).sort(s).forEach(function(e){t.on(e,o[0][e])});return this},off:function(e){return null!==this._defaultHandler&&e===this._defaultHandler.handler?this._defaultHandler=null:null!==this._notFoundHandler&&e===this._notFoundHandler.handler&&(this._notFoundHandler=null),this._routes=this._routes.reduce(function(t,n){return n.handler!==e&&t.push(n),t},[]),this},notFound:function(e,t){return this._notFoundHandler={handler:e,hooks:t},this},resolve:function(e){var n,o,i=this,s=(e||this._cLoc()).replace(this._getRoot(),"");this._useHash&&(s=s.replace(new RegExp("^/"+this._hash),"/"));var a=function(e){return e.split(/\?(.*)?$/).slice(1).join("")}(e||this._cLoc()),l=h(s,this._useHash,this._hash);return!this._paused&&(this._lastRouteResolved&&l===this._lastRouteResolved.url&&a===this._lastRouteResolved.query?(this._lastRouteResolved.hooks&&this._lastRouteResolved.hooks.already&&this._lastRouteResolved.hooks.already(this._lastRouteResolved.params),!1):(o=r(l,this._routes))?(this._callLeave(),this._lastRouteResolved={url:l,query:a,hooks:o.route.hooks,params:o.params,name:o.route.name},n=o.route.handler,u(function(){u(function(){o.route.route instanceof RegExp?n.apply(void 0,o.match.slice(1,o.match.length)):n(o.params,a)},o.route.hooks,o.params,i._genericHooks)},this._genericHooks,o.params),o):this._defaultHandler&&(""===l||"/"===l||l===this._hash||function(e,n,o){if(t()&&!n)return!1;if(!e.match(o))return!1;var i=e.split(o);return i.length<2||""===i[1]}(l,this._useHash,this._hash))?(u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._defaultHandler.hooks},i._defaultHandler.handler(a)},i._defaultHandler.hooks)},this._genericHooks),!0):(this._notFoundHandler&&u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._notFoundHandler.hooks},i._notFoundHandler.handler(a)},i._notFoundHandler.hooks)},this._genericHooks),!1))},destroy:function(){this._routes=[],this._destroyed=!0,this._lastRouteResolved=null,this._genericHooks=null,clearTimeout(this._listeningInterval),"undefined"!=typeof window&&(window.removeEventListener("popstate",this._onLocationChange),window.removeEventListener("hashchange",this._onLocationChange))},updatePageLinks:function(){var e=this;"undefined"!=typeof document&&this._findLinks().forEach(function(t){t.hasListenerAttached||(t.addEventListener("click",function(n){if((n.ctrlKey||n.metaKey)&&"a"==n.target.tagName.toLowerCase())return!1;var o=e.getLinkPath(t);e._destroyed||(n.preventDefault(),e.navigate(o.replace(/\/+$/,"").replace(/^\/+/,"/")))}),t.hasListenerAttached=!0)})},generate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=this._routes.reduce(function(n,o){var i;if(o.name===e)for(i in n=o.route,t)n=n.toString().replace(":"+i,t[i]);return n},"");return this._useHash?this._hash+n:n},link:function(e){return this._getRoot()+e},pause:function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this._paused=e,this._historyAPIUpdateMethod=e?"replaceState":"pushState"},resume:function(){this.pause(!1)},historyAPIUpdateMethod:function(e){return void 0===e?this._historyAPIUpdateMethod:(this._historyAPIUpdateMethod=e,e)},disableIfAPINotAvailable:function(){t()||this.destroy()},lastRouteResolved:function(){return this._lastRouteResolved},getLinkPath:function(e){return e.getAttribute("href")},hooks:function(e){this._genericHooks=e},_add:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;return"string"==typeof t&&(t=encodeURI(t)),this._routes.push("object"===(void 0===n?"undefined":e(n))?{route:t,handler:n.uses,name:n.as,hooks:o||n.hooks}:{route:t,handler:n,hooks:o}),this._add},_getRoot:function(){return null!==this.root?this.root:(this.root=a(this._cLoc().split("?")[0],this._routes),this.root)},_listen:function(){var e=this;if(this._usePushState)window.addEventListener("popstate",this._onLocationChange);else if("undefined"!=typeof window&&"onhashchange"in window)window.addEventListener("hashchange",this._onLocationChange);else{var t=this._cLoc(),n=void 0,o=void 0;(o=function(){n=e._cLoc(),t!==n&&(t=n,e.resolve()),e._listeningInterval=setTimeout(o,200)})()}},_cLoc:function(){return"undefined"!=typeof window?void 0!==window.__NAVIGO_WINDOW_LOCATION_MOCK__?window.__NAVIGO_WINDOW_LOCATION_MOCK__:o(window.location.href):""},_findLinks:function(){return[].slice.call(document.querySelectorAll("[data-navigo]"))},_onLocationChange:function(){this.resolve()},_callLeave:function(){var e=this._lastRouteResolved;e&&e.hooks&&e.hooks.leave&&e.hooks.leave(e.params)}},n.PARAMETER_REGEXP=/([:*])(\w+)/g,n.WILDCARD_REGEXP=/\*/g,n.REPLACE_VARIABLE_REGEXP="([^/]+)",n.REPLACE_WILDCARD="(?:.*)",n.FOLLOWED_BY_SLASH_REGEXP="(?:/$|$)",n.MATCH_REGEXP_FLAGS="",n});
 
@@ -20657,7 +21027,7 @@ module.exports = function xhrAdapter(config) {
   });
 };
 
-},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/process/browser.js":[function(require,module,exports) {
+},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -20967,7 +21337,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","process":"../../../AppData/Roaming/npm-cache/_npx/3576/node_modules/parcel/node_modules/process/browser.js"}],"node_modules/axios/lib/helpers/isAbsoluteURL.js":[function(require,module,exports) {
+},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","process":"../../../AppData/Roaming/npm-cache/_npx/15076/node_modules/parcel/node_modules/process/browser.js"}],"node_modules/axios/lib/helpers/isAbsoluteURL.js":[function(require,module,exports) {
 'use strict';
 
 /**
@@ -21394,26 +21764,7 @@ module.exports.default = axios;
 
 },{"./utils":"node_modules/axios/lib/utils.js","./helpers/bind":"node_modules/axios/lib/helpers/bind.js","./core/Axios":"node_modules/axios/lib/core/Axios.js","./core/mergeConfig":"node_modules/axios/lib/core/mergeConfig.js","./defaults":"node_modules/axios/lib/defaults.js","./cancel/Cancel":"node_modules/axios/lib/cancel/Cancel.js","./cancel/CancelToken":"node_modules/axios/lib/cancel/CancelToken.js","./cancel/isCancel":"node_modules/axios/lib/cancel/isCancel.js","./helpers/spread":"node_modules/axios/lib/helpers/spread.js"}],"node_modules/axios/index.js":[function(require,module,exports) {
 module.exports = require('./lib/axios');
-},{"./lib/axios":"node_modules/axios/lib/axios.js"}],"components/pages/ObitEmail.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
-  return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n    \n";
-};
-
-exports.default = _default;
-},{}],"index.js":[function(require,module,exports) {
+},{"./lib/axios":"node_modules/axios/lib/axios.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _Navigation = _interopRequireDefault(require("./components/Navigation"));
@@ -21430,27 +21781,14 @@ var _navigo = _interopRequireDefault(require("navigo"));
 
 var _axios = _interopRequireDefault(require("axios"));
 
-var _ObitEmail = _interopRequireDefault(require("./components/pages/ObitEmail"));
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["<h3> is the name of the deceased. Would you like to donate?</h3>"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var root = document.querySelector('#root'); // router is required to help our router handle localhost addresses
-
+// import ObitEmail from './components/pages/ObitEmail';
+// router is required to help our router handle localhost addresses
 var router = new _navigo.default(window.location.origin);
+var root = document.querySelector('#root');
 
 function render(state) {
   root.innerHTML = "\n    ".concat((0, _Navigation.default)(state), "\n    ").concat((0, _Content.default)(state), "\n    ").concat((0, _Footer.default)(state), "\n");
@@ -21461,85 +21799,130 @@ function handleRoutes(params) {
   render(states[(0, _lodash.capitalize)(params.path)]);
 }
 
-;
 router.on(':path', handleRoutes).on('/', function () {
   return render(states.Home);
-}).resolve(); // For Bereaved and Benefactor buttons
-
-function bereaved() {
-  render(states.bereaved);
-}
-
-;
-
-function benefactor() {
-  render(states.benefactor);
-}
-
-; // For Benefactor yes/no question
-
-function beneYes() {
-  render(states.BenefactorYes);
-}
-
-;
-
-function beneNo() {
-  render(states.BenefactorNope);
-}
-
-;
-
-function validateForm() {
-  var x = document.forms["nameValid"]["firstVerif"].value;
-  var y = document.forms["nameValid"]["lastVerif"].value; // We may want to input a John Doe name here
-
-  if (x !== "John") {
-    alert("Check Deaceased First Name");
-
-    if (y !== "Doe") {
-      alert("Check Deceased Last Name");
-    }
-
-    return (x, y)(_templateObject());
-  }
-} // INCLUDE ALL EVENT LISTENER CLICKS
-// DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
-// axios
-//     .get('https://jsonplaceholder.typicode.com/posts')
-//     .then((response) => {
-//         console.log('before each');
-//         response.data.forEach((post) => states.Blog.posts.push(post));
-//         if(router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog'){
-//             render(states.Blog);
-//             console.log(states);
+}).resolve(); // // For Bereaved and Benefactor buttons
+// function bereaved() {
+//     render(states.bereaved)
+// };
+// function benefactor() {
+//     render(states.benefactor)
+// };
+// // For Benefactor yes/no question
+// function beneYes() {
+//     render(states.BenefactorYes)
+// };
+// function beneNo() {
+//     render(states.BenefactorNope)
+// };
+// // For validating name of DECEASED
+// function validateForm() {
+//     const x = document.forms["nameValid"]["firstVerif"].value;
+//     const y = document.forms["nameValid"]["lastVerif"].value;
+//     // We may want to input a John Doe name here
+//     if (x !== "John") {
+//         alert("Check Deceased First Name");
+//         if (y !== "Doe") {
+//             alert("Check Deceased Last Name");
+//         }
+//         return (x, y)
+//         `<h3> is the name of the deceased. Would you like to donate?</h3>`;
+//     }
+// }
+// const express = require('express');
+// const ejs = require('ejs');
+// const paypal = require('paypal');
+// paypal.configure({
+//     'mode': 'sandbox', //sandbox or live
+//     'client_id': 'Ab_xtknbvX11aoyl93a4oyoyYxJ-sinQPzBILawktunp4PxSVoUKfQwCrLJaOfnpiIKxg1hwdYTGp-qC',
+//     'client_secret': 'EDMS_HqBDaOG-Q-FBTOaOXVIt24wa-XgdpkIq0mME7hxGNXxTexsEvGHhtflGNQ6WtwEa-tIRos75UH9'
+// });
+// const app = express();
+// app.set('view engine', 'ejs');
+// app.get('/', (req, res) => res.render('index'));
+// app.post('pay', (req, res) => {
+//     const create_payment_json = {
+//         "intent": "sale",
+//         "payer": {
+//             "payment_method": "paypal"
+//         },
+//         // Redirect assumption for http-server
+//         "redirect_urls": {
+//             "return_url": "http://localhost:8080/success",
+//             "cancel_url": "http://localhost:8080/cancel"
+//         },
+//         "transactions": [{
+//             "item_list": {
+//                 "items": [{
+//                     "name": "Donation",
+//                     "sku": "001",
+//                     "price": "25.00",
+//                     "currency": "USD",
+//                     "quantity": 1
+//                 }]
+//             },
+//             "amount": {
+//                 "currency": "USD",
+//                 "total": "25.00"
+//             },
+//             "description": "TwoFlower Donation"
+//         }]
+//     };
+//     paypal.payment.create(create_payment_json, function(error, payment) {
+//         if (error) {
+//             throw error;
+//         } else {
+//             for (let i = 0; 1 < payment.links.length; i++) {
+//                 if (payment.links[i].rel === 'approval_url') {
+//                     res.redirect(payment.links[i].href);
+//                 }
+//             }
+//             // console.log("Create Payment Response");
+//             // console.log(payment);
+//             // res.send('test');
 //         }
 //     });
-// document.querySelector("#globe").addEventListener("click", function change() {
-//     let colors = document.body.style.backgroundColor;
-//     console.log(colors);
-//     if (colors === "white") {
-//         document.body.style.backgroundColor = "black";
-//     } else {
-//         document.body.style.backgroundColor = "white";
-//     }
 // });
-// Doug's Fancy Globe
-// document.querySelector("#globe").addEventListener("click", function() {
-//   let colors = document.body.style.backgroundColor;
-//   let x = document.getElementsByClassName("list");
-//   var i;
-//   if (colors === "white") {
-//     for (i = 0; i < x.length; i++) {
-//       x[i].style.color = "black";
-//     }
-//   } else {
-//     for (i = 0; i < x.length; i++) {
-//       x[i].style.color = "white";
-//     }
-//   }
+// app.get('/success', (req, res) => {
+//     const payerId = req.query.PayerID;
+//     const paymentID = req.query.paymentId;
+//     const execute_payment_json = {
+//         "payer_id": payerId,
+//         "transaction": [{
+//             "amount": {
+//                 "currency": "USD",
+//                 "total": "25.00"
+//             }
+//         }]
+//     };
+//     paypal.payment.execute(paymentID, execute_payment_json, function(error, payment) {
+//         if (error) {
+//             console.log(error.response);
+//             throw error;
+//         } else {
+//             console.log("Get payment response");
+//             console.log(JSON.stringify(payment));
+//             res.send('success');
+//         }
+//     });
 // });
-},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js","./components/pages/ObitEmail":"components/pages/ObitEmail.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+// app.get('/cancel', (req, res) => res.send('Cancelled'));
+// app.listen(3000, () => console.log('Server Started'));
+// INCLUDE ALL EVENT LISTENER CLICKS
+// DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
+
+_axios.default.get('https://jsonplaceholder.typicode.com/posts').then(function (response) {
+  console.log('before each');
+  response.data.forEach(function (post) {
+    return states.Blog.posts.push(post);
+  });
+
+  if (router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog') {
+    render(states.Blog);
+    console.log(states);
+  }
+});
+},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/15968/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -21567,7 +21950,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54303" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63554" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -21742,5 +22125,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/15968/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.js.map

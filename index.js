@@ -7,12 +7,12 @@ import * as states from './store';
 import { capitalize } from 'lodash';
 import Navigo from 'navigo';
 import axios from 'axios';
-import ObitEmail from './components/pages/ObitEmail';
-
-const root = document.querySelector('#root');
+// import ObitEmail from './components/pages/ObitEmail';
 
 // router is required to help our router handle localhost addresses
 const router = new Navigo(window.location.origin);
+
+const root = document.querySelector('#root');
 
 function render(state) {
     root.innerHTML = `
@@ -25,45 +25,46 @@ function render(state) {
 }
 
 function handleRoutes(params) {
-    render(states[capitalize(params.path)])
-};
+    render(states[capitalize(params.path)]);
+}
 
 router
     .on(':path', (handleRoutes))
     .on('/', () => render(states.Home))
     .resolve();
 
-// For Bereaved and Benefactor buttons
-function bereaved() {
-    render(states.bereaved)
-};
+// // For Bereaved and Benefactor buttons
+// function bereaved() {
+//     render(states.bereaved)
+// };
 
-function benefactor() {
-    render(states.benefactor)
-};
+// function benefactor() {
+//     render(states.benefactor)
+// };
 
-// For Benefactor yes/no question
-function beneYes() {
-    render(states.BenefactorYes)
-};
+// // For Benefactor yes/no question
+// function beneYes() {
+//     render(states.BenefactorYes)
+// };
 
-function beneNo() {
-    render(states.BenefactorNope)
-};
+// function beneNo() {
+//     render(states.BenefactorNope)
+// };
 
-function validateForm() {
-    const x = document.forms["nameValid"]["firstVerif"].value;
-    const y = document.forms["nameValid"]["lastVerif"].value;
-    // We may want to input a John Doe name here
-    if (x !== "John") {
-        alert("Check Deaceased First Name");
-        if (y !== "Doe") {
-            alert("Check Deceased Last Name");
-        }
-        return (x, y)
-        `<h3> is the name of the deceased. Would you like to donate?</h3>`;
-    }
-}
+// // For validating name of DECEASED
+// function validateForm() {
+//     const x = document.forms["nameValid"]["firstVerif"].value;
+//     const y = document.forms["nameValid"]["lastVerif"].value;
+//     // We may want to input a John Doe name here
+//     if (x !== "John") {
+//         alert("Check Deceased First Name");
+//         if (y !== "Doe") {
+//             alert("Check Deceased Last Name");
+//         }
+//         return (x, y)
+//         `<h3> is the name of the deceased. Would you like to donate?</h3>`;
+//     }
+// }
 
 // const express = require('express');
 // const ejs = require('ejs');
@@ -159,13 +160,13 @@ function validateForm() {
 // INCLUDE ALL EVENT LISTENER CLICKS
 // DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
 
-// axios
-//     .get('https://jsonplaceholder.typicode.com/posts')
-//     .then((response) => {
-//         console.log('before each');
-//         response.data.forEach((post) => states.Blog.posts.push(post));
-//         if(router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog'){
-//             render(states.Blog);
-//             console.log(states);
-//         }
-//     });
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        console.log('before each');
+        response.data.forEach((post) => states.Blog.posts.push(post));
+        if (router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog') {
+            render(states.Blog);
+            console.log(states);
+        }
+    });
