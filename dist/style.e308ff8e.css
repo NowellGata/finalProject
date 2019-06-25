@@ -108,4 +108,9 @@ ol {
     transition: .22s ease;
 }
 
+.jumbotron {
+    background: url(https://images.pexels.com/photos/59305/pexels-photo-59305.png?auto=compress&cs=tinysrgb&dpr=2&w=500) fixed center no-repeat;
+    background-size: cover;
+}
+
 /*# sourceMappingURL=/style.e308ff8e.css.map */

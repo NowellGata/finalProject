@@ -1,8 +1,8 @@
 export default () => `
 <html>
 <body>
-<form class="form-horizontal">
-<fieldset>
+<div class= "jumbotron">
+<form class="form-horizontal" action="https://formspree.io/email@domain.tld" method="POST" />
 
 <!-- Form Name -->
 <legend>Obituary</legend>
@@ -45,13 +45,14 @@ export default () => `
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton">Submit</label>
   <div class="col-md-4">
-    <button id="dead" name="singlebutton" class="btn btn-primary">Button</button>
+    <button id="dead" name="singlebutton" class="btn btn-primary">Submit</button>
   </div>
 </div>
 
 </fieldset>
 </form>
 </body>
+</div>
 
 </html>
 `;

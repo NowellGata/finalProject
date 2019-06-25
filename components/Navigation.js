@@ -19,10 +19,10 @@ export default (state) => `
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="https://vigorous-kilby-054661.netlify.com/">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="https://vigorous-kilby-054661.netlify.com/blog">Blog</a>
         </li>
       </ul>
       <form class="form-inline">

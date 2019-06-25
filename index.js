@@ -54,7 +54,7 @@ benefact.addEventListener('click', (e) => {
 const beneY = document.querySelector('#beneYes');
 beneY.addEventListener('click', (e) => {
     e.preventDefault();
-    render(states.BenefactorYes);
+    render(states.BenefactorName);
 })
 
 const beneN = document.querySelector('#beneNo');

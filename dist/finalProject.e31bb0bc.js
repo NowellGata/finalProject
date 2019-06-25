@@ -132,7 +132,7 @@ function buildNavHTML(stateLinks) {
 }
 
 var _default = function _default(state) {
-  return "\n<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Blog</a>\n        </li>\n      </ul>\n      <form class=\"form-inline\">\n       \n      </form>\n    </div>\n  </div>\n</nav>\n<!-- Navbar -->\n";
+  return "\n<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"https://vigorous-kilby-054661.netlify.com/\">About</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"https://vigorous-kilby-054661.netlify.com/blog\">Blog</a>\n        </li>\n      </ul>\n      <form class=\"form-inline\">\n       \n      </form>\n    </div>\n  </div>\n</nav>\n<!-- Navbar -->\n";
 };
 
 exports.default = _default;
@@ -170,7 +170,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<body>\n<h1 class=\"display-1\">TwoFLower 4</h1>\n<h1 class=\"display-4\">Would you like to donate Acts of Kindness to the bereaved? </h1>\n<button onclick=\"beneYes\" type=\"button\" class=\"btn btn-primary btn-lg btn-block\">Yes</button>\n<button onclick=\"beneNo\" type=\"button\" class=\"btn btn-primary btn-lg btn-block\">No</button>\n\n</body>\n;";
+  return "\n<div class= \"jumbotron\">\n<body>\n<h1 class=\"display-1\">TwoFlower</h1>\n<h1 class=\"display-4\">Would you like to donate Acts of Kindness to the bereaved? </h1>\n<button type=\"button\" class=\"btn btn-outline-secondary\">Secondary</button>\n<button type=\"button\" class=\"btn btn-outline-secondary\">Secondary</button>\n\n</body>\n</div>\n;";
 };
 
 exports.default = _default;
@@ -183,8 +183,27 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<h1>Help the Bereaved Family with the help of TwoFlower</h1>\n<h3>What Acts of Kindness would you like to promise the Bereaved?</h3>\n<div class= \"formContainer\">\n<form>\n<label for=\"story\">Tell us your story:</label>\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n\n<input type=\"submit\">\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n<form action=\"/action_page.php\">Would you like to send money to help with the funeral?<input type=\"number\" name=\"quantity\" min=\"1\" max=\"5\">\n  <input type=\"submit\"> \n</form>  \n</form>\n</div>\n";
-};
+  return "\n\n";
+}; // {/* <h1>Help the Bereaved Family with the help of TwoFlower</h1>
+// <h3>What Acts of Kindness would you like to promise the Bereaved?</h3>
+// <div class= "formContainer">
+// <form>
+// <label for="story">Tell us your story:</label>
+// <textarea id="kindness1" name="kindness1"
+//           rows="5" cols="33">
+// Act of Kindness 
+// </textarea>
+// <input type="submit">
+// <textarea id="kindness1" name="kindness1"
+//           rows="5" cols="33">
+// Act of Kindness 
+// </textarea>
+// <form action="/action_page.php">Would you like to send money to help with the funeral?<input type="number" name="quantity" min="1" max="5">
+//   <input type="submit"> 
+// </form>  
+// </form>
+// </div> */}
+
 
 exports.default = _default;
 },{}],"components/pages/BenefactorThanks.js":[function(require,module,exports) {
@@ -235,7 +254,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<h1>Well, thank you for listening!</h1>\n<h2>Death is the reminder that there is life left to live.</h2>\n<h3>Here is a cat gif for your grieving pleasure.</h3>\n<div class=\"kitty\">\n  <img src=\"https://i.imgur.com/C2TyjIS.gif\" name=\"hellokitty\" value=\"cats\">\n</div>\n";
+  return "\n<body>\n<h1 class=\"display-1\">Understood. Prayers help, too.</h1>\n<h1 class=\"display-4\">Please know that death is just a reminder that there is more life left to live. Here are some cats to cheer you up.</h1>\n<div class=\"kitty\">\n  <img src=\"https://i.imgur.com/C2TyjIS.gif\" name=\"hellokitty\" value=\"cats\">\n</div>\n</body>\n";
 }; // FEATURE: Implement Cat Gif API to display a random gif of a cat.
 
 
@@ -249,11 +268,21 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<h1>Do you want to know if you can help?</h1>\n<h3>Please enter the name of the deceased:</h3>\n<div class= \"formContainer\"></div>\n<form name=\"nameValid\" action=\"/action_page.php\" onsubmit=\"return validateForm()\" method=\"post\">\n<input type=\"text\" name=\"firstVerif\" value=\"First Name\">\n<input type=\"text\" name=\"lastVerif\" value=\"Last Name\">\n<input type=\"submit\" value=\"Submit\">\n</form>\n";
+  return "\n<form class=\"form-horizontal\">\n<fieldset>\n\n<!-- Form Name -->\n<legend>Name of the Deceased</legend>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">Text Input</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"placeholder\" class=\"form-control input-md\">\n  <span class=\"help-block\">help</span>  \n  </div>\n</div>\n\n<!-- Button (Double) -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"button1id\">Check Name</label>\n  <div class=\"col-md-8\">\n    <button id=\"nameSub\" name=\"button1id\" class=\"btn btn-success\">Submit</button>\n    <button id=\"cancel\" name=\"button2id\" class=\"btn btn-danger\">Cancel</button>\n  </div>\n\n</fieldset>\n</form>\n";
 }; // Enter the name of the deceased to access an array of dead people.
 
 
 exports.default = _default;
+{
+  /* <h1>Do you want to know if you can help?</h1>
+  <h3>Please enter the name of the deceased:</h3>
+  <div class= "formContainer"></div>
+  <form name="nameValid" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <input type="text" name="firstVerif" value="First Name">
+  <input type="text" name="lastVerif" value="Last Name">
+  <input type="submit" value="Submit">
+  </form> */
+}
 },{}],"components/pages/Obituary.js":[function(require,module,exports) {
 "use strict";
 
@@ -276,7 +305,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<html>\n<body>\n<form class=\"form-horizontal\">\n<fieldset>\n\n<!-- Form Name -->\n<legend>Obituary</legend>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">First Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"first name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">Last Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"last name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Textarea -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textarea\">Obituary</label>\n  <div class=\"col-md-4\">                     \n    <textarea class=\"form-control\" id=\"textarea\" name=\"textarea\">Tell us about the Deceased.</textarea>\n  </div>\n</div>\n\n<!-- File Button --> \n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"filebutton\">Photo</label>\n  <div class=\"col-md-4\">\n    <input id=\"filebutton\" name=\"filebutton\" class=\"input-file\" type=\"file\">\n  </div>\n</div>\n\n<!-- Button -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"singlebutton\">Submit</label>\n  <div class=\"col-md-4\">\n    <button id=\"dead\" name=\"singlebutton\" class=\"btn btn-primary\">Button</button>\n  </div>\n</div>\n\n</fieldset>\n</form>\n</body>\n\n</html>\n";
+  return "\n<html>\n<body>\n<div class= \"jumbotron\">\n<form class=\"form-horizontal\" action=\"https://formspree.io/email@domain.tld\" method=\"POST\" />\n\n<!-- Form Name -->\n<legend>Obituary</legend>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">First Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"first name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">Last Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"last name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Textarea -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textarea\">Obituary</label>\n  <div class=\"col-md-4\">                     \n    <textarea class=\"form-control\" id=\"textarea\" name=\"textarea\">Tell us about the Deceased.</textarea>\n  </div>\n</div>\n\n<!-- File Button --> \n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"filebutton\">Photo</label>\n  <div class=\"col-md-4\">\n    <input id=\"filebutton\" name=\"filebutton\" class=\"input-file\" type=\"file\">\n  </div>\n</div>\n\n<!-- Button -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"singlebutton\">Submit</label>\n  <div class=\"col-md-4\">\n    <button id=\"dead\" name=\"singlebutton\" class=\"btn btn-primary\">Submit</button>\n  </div>\n</div>\n\n</fieldset>\n</form>\n</body>\n</div>\n\n</html>\n";
 };
 /* <h1>Necessary actions</h1>
 <h2>What can be done to help you in your time of need?</h2>
@@ -21779,7 +21808,7 @@ benefact.addEventListener('click', function (e) {
 var beneY = document.querySelector('#beneYes');
 beneY.addEventListener('click', function (e) {
   e.preventDefault();
-  render(states.BenefactorYes);
+  render(states.BenefactorName);
 });
 var beneN = document.querySelector('#beneNo');
 beneN.addEventListener('click', function (e) {
@@ -21892,7 +21921,7 @@ _axios.default.get('https://jsonplaceholder.typicode.com/posts').then(function (
     console.log(states);
   }
 });
-},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/16564/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/16260/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -21920,7 +21949,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53860" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52134" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -22095,5 +22124,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/16564/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/16260/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.js.map
