@@ -33,8 +33,8 @@ router
     .on('/', () => render(states.Home))
     .resolve();
 
-// Animations init
-new WOW().init();
+// // Animations init
+// new WOW().init();
 
 // For Bereaved and Benefactor buttons
 const bereave = document.querySelector('#bereaved');

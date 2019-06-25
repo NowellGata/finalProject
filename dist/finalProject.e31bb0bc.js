@@ -132,7 +132,7 @@ function buildNavHTML(stateLinks) {
 }
 
 var _default = function _default(state) {
-  return "\n  <nav>\n  <ul>\n    \n  </ul>\n  </nav>\n";
+  return "\n<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Blog</a>\n        </li>\n      </ul>\n      <form class=\"form-inline\">\n       \n      </form>\n    </div>\n  </div>\n</nav>\n<!-- Navbar -->\n";
 };
 
 exports.default = _default;
@@ -145,7 +145,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<body>\n<header>\n          <!--Navbar-->\n          <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n            <div class=\"container\">\n              <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n              <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n              </button>\n              <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n                <ul class=\"navbar-nav mr-auto\">\n                  <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n                  </li>\n                  <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Link</a>\n                  </li>\n                  <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Blog</a>\n                  </li>\n                </ul>\n                <form class=\"form-inline\">\n                 \n                </form>\n              </div>\n            </div>\n          </nav>\n          <!-- Navbar -->\n          <!-- Full Page Intro -->\n          <div class=\"view\" style=\"background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;\">\n            <!-- Mask & flexbox options-->\n            <div class=\"mask rgba-black-light align-items-center\">\n              <!-- Content -->\n              <div class=\"container\">\n                <!--Grid row-->\n                <div class=\"row\">\n                  <!--Grid column-->\n                  <div class=\"col-md-12 mb-4 white-text text-center\">\n                    <h1 class=\"h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown\" data-wow-delay=\"0.3s\"><strong>TwoFlower</strong></h1>\n                    <hr class=\"hr-light my-4 wow fadeInDown\" data-wow-delay=\"0.4s\">\n                    <h5 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>Grieve Proactively</strong></h5>\n                                        \n                    <a id= \"bereaved\" class=\"btn btn-outline-white wow fadeInDown\" data-wow-delay=\"0.4s\">BEREAVED</a>\n                    <a id= \"benefactor\" class=\"btn btn-outline-white wow fadeInDown\" data-wow-delay=\"0.4s\">BENEFACTOR</a>\n                  </div>\n                  <!--Grid column-->\n                </div>\n                <!--Grid row-->\n              </div>\n              <!-- Content -->\n            </div>\n            <!-- Mask & flexbox options-->\n          </div>\n          <!-- Full Page Intro -->\n        </header>\n        <!-- Main navigation -->\n        <!--Main Layout-->\n        <main>\n          <div class=\"container\">\n            <!--Grid row-->\n            <div class=\"row py-5\">\n              <!--Grid column-->\n              <div class=\"col-md-12 text-center\">\n                <p>An unexpected death is tough for any family. It can certainly be tough asking for help in this time of need.</p>\n                <p>This is where TwoFlower comes in. This app is designed as a crowdfunding platform so that the grieving can get through the death of a loved one...</p>\n                <p></p>\n                <p>And on with the rest of their lives...</p>\n              </div>\n\n              <div class=\"text-center\" position=\"center\">\n                    <img src=\"https://i.imgur.com/mhDbt7J.png\" class=\"rounded\" alt=\"...\">\n                    </div>\n              <!--Grid column-->\n            </div>\n            <!--Grid row-->\n          </div>\n        </main>\n        <!--Main Layout-->\n\n\n\n</body>\n\n    \n";
+  return "\n<body>\n<header>\n          \n          <!-- Full Page Intro -->\n          <div class=\"view\" style=\"background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;\">\n            <!-- Mask & flexbox options-->\n            <div class=\"mask rgba-black-light align-items-center\">\n              <!-- Content -->\n              <div class=\"container\">\n                <!--Grid row-->\n                <div class=\"row\">\n                  <!--Grid column-->\n                  <div class=\"col-md-12 mb-4 white-text text-center\">\n                    <h1 class=\"h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown\" data-wow-delay=\"0.3s\"><strong>TwoFlower</strong></h1>\n                    <hr class=\"hr-light my-4 wow fadeInDown\" data-wow-delay=\"0.4s\">\n                    <h5 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>Grieve Proactively</strong></h5>\n                    <button type=\"button\" id=\"bereaved\" class=\"btn btn-outline-light\">BEREAVED</button>                   \n                    <button type=\"button\" id=\"benefactor\" class=\"btn btn-outline-light\">BENEFACTOR</button>\n                    \n                  </div>\n                  <!--Grid column-->\n                </div>\n                <!--Grid row-->\n              </div>\n              <!-- Content -->\n            </div>\n            <!-- Mask & flexbox options-->\n          </div>\n          <!-- Full Page Intro -->\n        </header>\n        <!-- Main navigation -->\n        <!--Main Layout-->\n        <main>\n          <div class=\"container\">\n            <!--Grid row-->\n            <div class=\"row py-5\">\n              <!--Grid column-->\n              <div class=\"col-md-12 text-center\">\n                <p>An unexpected death is tough for any family. It can certainly be tough asking for help in this time of need.</p>\n                <p>This is where TwoFlower comes in. This app is designed as a crowdfunding platform so that the grieving can get through the death of a loved one...</p>\n                <p></p>\n                <p>And on with the rest of their lives...</p>\n              </div>\n\n              <div class=\"text-center\" position=\"center\">\n                    <img src=\"https://i.imgur.com/mhDbt7J.png\" class=\"rounded\" alt=\"...\">\n                    </div>\n              <!--Grid column-->\n            </div>\n            <!--Grid row-->\n          </div>\n        </main>\n        <!--Main Layout-->\n\n\n\n</body>\n\n    \n";
 };
 
 exports.default = _default;
@@ -276,10 +276,43 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n\n<h3>Please enter information for the DECEASED</h3>\n<div class=\"obituary\">\n  \n</div class= \"formContainer\">\n  <form action=\"/action_page.php\"> \n  Name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadFirst\" value=\"First Name\">\n  <br>\n  Last name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadLast\" value=\"Last Name\">\n  <br><br>\n <textarea rows=10 cols=50 name=\"obit\" value=\"obit\">Enter a brief obituary</textarea>\n</form> \n  <label for=\"avatar\">Please choose a photo of the DECEASED</label>\n\n<input type=\"file\"\n       id=\"deadPhoto\" name=\"avatar\"\n       accept=\"image/png, image/jpeg\">\n\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n";
+  return "\n<body>\n<form class=\"form-horizontal\">\n<fieldset>\n\n<!-- Form Name -->\n<legend>Obituary</legend>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">First Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"first name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Text input-->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textinput\">Last Name</label>  \n  <div class=\"col-md-4\">\n  <input id=\"textinput\" name=\"textinput\" type=\"text\" placeholder=\"last name\" class=\"form-control input-md\">\n  <span class=\"help-block\"></span>  \n  </div>\n</div>\n\n<!-- Textarea -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"textarea\">Obituary</label>\n  <div class=\"col-md-4\">                     \n    <textarea class=\"form-control\" id=\"textarea\" name=\"textarea\">Tell us about the Deceased.</textarea>\n  </div>\n</div>\n\n<!-- File Button --> \n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"filebutton\">Photo</label>\n  <div class=\"col-md-4\">\n    <input id=\"filebutton\" name=\"filebutton\" class=\"input-file\" type=\"file\">\n  </div>\n</div>\n\n<!-- Button -->\n<div class=\"form-group\">\n  <label class=\"col-md-4 control-label\" for=\"singlebutton\">Submit</label>\n  <div class=\"col-md-4\">\n    <button id=\"dead\" name=\"singlebutton\" class=\"btn btn-primary\">Button</button>\n  </div>\n</div>\n\n</fieldset>\n</form>\n</body>\n";
 };
 
 exports.default = _default;
+{
+  /* <h1>Necessary actions</h1>
+  <h2>What can be done to help you in your time of need?</h2>
+    <h3>Please enter information for the DECEASED</h3>
+  <div class="obituary">
+    
+  </div class= "formContainer">
+    <form action="/action_page.php"> 
+    Name of the Deaceased:<br>
+    <input type="text" name="deadFirst" value="First Name">
+    <br>
+    Last name of the Deaceased:<br>
+    <input type="text" name="deadLast" value="Last Name">
+    <br><br>
+   <textarea rows=10 cols=50 name="obit" value="obit">Enter a brief obituary</textarea>
+  </form> 
+    <label for="avatar">Please choose a photo of the DECEASED</label>
+    <input type="file"
+         id="deadPhoto" name="avatar"
+         accept="image/png, image/jpeg">
+    <h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>
+    <div class="formContainer">
+  <form action="/action_page.php"> 
+    Favorable Action:<br>
+    <input type="text" name="aocOne" value="Act of Kindness1">
+    <br>
+    Favorable Action:<br>
+    <input type="text" name="aocTwo" value="Act of Kindness2">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  </div> */
+}
 },{}],"components/pages/ObitSubmitted.js":[function(require,module,exports) {
 "use strict";
 
@@ -433,8 +466,12 @@ var pages = _interopRequireWildcard(require("./pages"));
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 var _default = function _default(state) {
-  return "\n  <div id=\"bg-container\">\n    ".concat(pages[state.pageContent](state), "\n  </div>");
-};
+  return "\n  ".concat(pages[state.pageContent](state), "\n");
+}; // export default (state) => `
+//   <div id="bg-container">
+//     ${pages[state.pageContent](state)}
+//   </div>`;
+
 
 exports.default = _default;
 },{"./pages":"components/pages/index.js"}],"components/Footer.js":[function(require,module,exports) {
@@ -446,8 +483,13 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n    <div id= \"footer\">\n    &copy: 2019 Nowell Gata\n    </div>\n";
-};
+  return "\n<footer class=\"section footer-classic context-dark bg-image\" style=\"background: #2d3246;\">\n        <div class=\"container\">\n          <div class=\"row row-30\">\n            <div class=\"col-md-4 col-xl-5\">\n              <div class=\"pr-xl-4\"><a class=\"brand\" href=\"index.html\"><img class=\"brand-logo-light\" src=\"images/agency/logo-inverse-140x37.png\" alt=\"\" width=\"140\" height=\"37\" srcset=\"images/agency/logo-retina-inverse-280x74.png 2x\"></a>\n                <p>While we can't always ease the pain of losing a loved one, we can certainly ease the burden with human connection.</p>\n                <!-- Rights-->\n                <p class=\"rights\"><span>\xA9\xA0 </span><span class=\"copyright-year\">2019</span><span>\xA0</span><span>ATAG Creative</span><span>.\xA0</span><span>All Rights Reserved.</span></p>\n              </div>\n            </div>\n            <div class=\"col-md-4\">\n              <h5>Contacts</h5>\n              <dl class=\"contact-list\">\n                <dt>Address:</dt>\n                <dd>420 Paper Street, St. Louis, MO</dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>email:</dt>\n                <dd><a href=\"mailto:nowell.gata@gmail.com\">nowell.gata@gmail.com</a></dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>phones:</dt>\n                <dd><a href=\"tel:#\">314.781.8188</a> <span>or</span> <a href=\"tel:#\">314.867.5309</a>\n                </dd>\n              </dl>\n            </div>\n            <div class=\"col-md-4 col-xl-3\">\n              <h5>Links</h5>\n              <ul class=\"nav-list\">\n                <li><a href=\"#\">About</a></li>\n                <li><a href=\"#\">Blog</a></li>\n               </ul>\n            </div>\n          </div>\n        </div>\n       </footer>\n\n";
+}; //  <
+// div id = "footer" >
+//     &
+//     copy: 2019 Nowell Gata <
+//     /div>
+
 
 exports.default = _default;
 },{}],"store/Links.js":[function(require,module,exports) {
@@ -21716,9 +21758,9 @@ function handleRoutes(params) {
 
 router.on(':path', handleRoutes).on('/', function () {
   return render(states.Home);
-}).resolve(); // Animations init
-
-new WOW().init(); // For Bereaved and Benefactor buttons
+}).resolve(); // // Animations init
+// new WOW().init();
+// For Bereaved and Benefactor buttons
 
 var bereave = document.querySelector('#bereaved');
 bereave.addEventListener('click', function (e) {
@@ -21847,7 +21889,7 @@ _axios.default.get('https://jsonplaceholder.typicode.com/posts').then(function (
     console.log(states);
   }
 });
-},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/22636/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/15512/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -21875,7 +21917,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52422" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -22050,5 +22092,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/22636/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/15512/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.js.map

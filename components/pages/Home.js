@@ -1,32 +1,7 @@
 export default () => `
 <body>
 <header>
-          <!--Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <div class="container">
-              <a class="navbar-brand" href="#"><strong>TwoFlower</strong></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                </ul>
-                <form class="form-inline">
-                 
-                </form>
-              </div>
-            </div>
-          </nav>
-          <!-- Navbar -->
+          
           <!-- Full Page Intro -->
           <div class="view" style="background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <!-- Mask & flexbox options-->
@@ -40,9 +15,9 @@ export default () => `
                     <h1 class="h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>TwoFlower</strong></h1>
                     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
                     <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Grieve Proactively</strong></h5>
-                                        
-                    <a id= "bereaved" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">BEREAVED</a>
-                    <a id= "benefactor" class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">BENEFACTOR</a>
+                    <button type="button" id="bereaved" class="btn btn-outline-light">BEREAVED</button>                   
+                    <button type="button" id="benefactor" class="btn btn-outline-light">BENEFACTOR</button>
+                    
                   </div>
                   <!--Grid column-->
                 </div>
