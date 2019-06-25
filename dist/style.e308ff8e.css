@@ -1,5 +1,51 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+a {
+    color: whitesmoke;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.top-nav-collapse {
+    background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}
+
 h1 {
-    font-family: Helvetica black;
+    letter-spacing: 16px;
+    font-family: Quicksand;
+    color: whitesmoke;
+}
+
+h5 {
+    letter-spacing: 3px;
+    color: whitesmoke;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
 }
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

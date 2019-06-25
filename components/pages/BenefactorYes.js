@@ -1,13 +1,4 @@
-function buildNavHTML(stateLinks) {
-    return stateLinks
-        .map(
-            (link) =>
-            `<li><a href="/${link.text.toLowerCase()}" data-navigo>${link.text}</a></li>`
-        )
-        .join(' ');
-}
-
-export default (state) => `
+export default () => `
 <div id="container">
 <div id = "err" class ="center red"></div>
         <form id="login">

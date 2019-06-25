@@ -33,23 +33,35 @@ router
     .on('/', () => render(states.Home))
     .resolve();
 
-// // For Bereaved and Benefactor buttons
-// function bereaved() {
-//     render(states.bereaved)
-// };
+// Animations init
+new WOW().init();
 
-// function benefactor() {
-//     render(states.benefactor)
-// };
+// For Bereaved and Benefactor buttons
+const bereave = document.querySelector('#bereaved');
+bereave.addEventListener('click', (e) => {
+    e.preventDefault();
+    render(states.Bereaved);
+})
 
-// // For Benefactor yes/no question
-// function beneYes() {
-//     render(states.BenefactorYes)
-// };
+const benefact = document.querySelector('#benefactor');
+benefact.addEventListener('click', (e) => {
+    e.preventDefault();
+    render(states.Benefactor);
+})
 
-// function beneNo() {
-//     render(states.BenefactorNope)
-// };
+
+// For Benefactor yes/no question
+const beneY = document.querySelector('#beneYes');
+beneY.addEventListener('click', (e) => {
+    e.preventDefault();
+    render(states.BenefactorYes);
+})
+
+const beneN = document.querySelector('#beneNo');
+beneN.addEventListener('click', (e) => {
+    e.preventDefault();
+    render(states.BenefactorForm);
+})
 
 // // For validating name of DECEASED
 // function validateForm() {

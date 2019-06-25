@@ -132,11 +132,11 @@ function buildNavHTML(stateLinks) {
 }
 
 var _default = function _default(state) {
-  return "\n  <nav>\n  <ul>\n    ".concat(buildNavHTML(state.links.primary), "\n  </ul>\n  </nav>\n");
+  return "\n  <nav>\n  <ul>\n    \n  </ul>\n  </nav>\n";
 };
 
 exports.default = _default;
-},{}],"components/pages/Links.js":[function(require,module,exports) {
+},{}],"components/pages/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -144,17 +144,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _Links = _interopRequireDefault(require("./Links"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var _default = {
-  'pageContent': 'ObitSubmitted',
-  'title': 'ObitSubmitted',
-  'link': _Links.default
+var _default = function _default() {
+  return "\n<body>\n<header>\n          <!--Navbar-->\n          <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n            <div class=\"container\">\n              <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n              <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n              </button>\n              <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n                <ul class=\"navbar-nav mr-auto\">\n                  <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n                  </li>\n                  <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Link</a>\n                  </li>\n                  <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Blog</a>\n                  </li>\n                </ul>\n                <form class=\"form-inline\">\n                 \n                </form>\n              </div>\n            </div>\n          </nav>\n          <!-- Navbar -->\n          <!-- Full Page Intro -->\n          <div class=\"view\" style=\"background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;\">\n            <!-- Mask & flexbox options-->\n            <div class=\"mask rgba-black-light align-items-center\">\n              <!-- Content -->\n              <div class=\"container\">\n                <!--Grid row-->\n                <div class=\"row\">\n                  <!--Grid column-->\n                  <div class=\"col-md-12 mb-4 white-text text-center\">\n                    <h1 class=\"h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown\" data-wow-delay=\"0.3s\"><strong>TwoFlower</strong></h1>\n                    <hr class=\"hr-light my-4 wow fadeInDown\" data-wow-delay=\"0.4s\">\n                    <h5 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>Grieve Proactively</strong></h5>\n                                        \n                    <a id= \"bereaved\" class=\"btn btn-outline-white wow fadeInDown\" data-wow-delay=\"0.4s\">BEREAVED</a>\n                    <a id= \"benefactor\" class=\"btn btn-outline-white wow fadeInDown\" data-wow-delay=\"0.4s\">BENEFACTOR</a>\n                  </div>\n                  <!--Grid column-->\n                </div>\n                <!--Grid row-->\n              </div>\n              <!-- Content -->\n            </div>\n            <!-- Mask & flexbox options-->\n          </div>\n          <!-- Full Page Intro -->\n        </header>\n        <!-- Main navigation -->\n        <!--Main Layout-->\n        <main>\n          <div class=\"container\">\n            <!--Grid row-->\n            <div class=\"row py-5\">\n              <!--Grid column-->\n              <div class=\"col-md-12 text-center\">\n                <p>An unexpected death is tough for any family. It can certainly be tough asking for help in this time of need.</p>\n                <p>This is where TwoFlower comes in. This app is designed as a crowdfunding platform so that the grieving can get through the death of a loved one...</p>\n                <p></p>\n                <p>And on with the rest of their lives...</p>\n              </div>\n\n              <div class=\"text-center\" position=\"center\">\n                    <img src=\"https://i.imgur.com/mhDbt7J.png\" class=\"rounded\" alt=\"...\">\n                    </div>\n              <!--Grid column-->\n            </div>\n            <!--Grid row-->\n          </div>\n        </main>\n        <!--Main Layout-->\n\n\n\n</body>\n\n    \n";
 };
+
 exports.default = _default;
-},{"./Links":"components/pages/Links.js"}],"components/pages/Home.js":[function(require,module,exports) {
+{
+  /* <div class="bg">
+    <h1> TwoFlower</h1>
+    <h2> Allowing those that have lost a loved one to grieve proactively.</h2>
+    <h3> If you have lost someone dear, press BEREAVED to get started. If you would like to donate time or money to the Bereaved, please press BENEFACTOR</h3>
+      <div class= "choice">
+        <button id="bereaved">BEREAVED</button>
+        <button id="benefactor">BENEFACTOR</button>
+      </div>
+  </div>
+  <p class="py-5 text-center">TEST</p> */
+}
+},{}],"components/pages/Benefactor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -162,31 +169,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _Links = _interopRequireDefault(require("./Links"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var _default = function _default(state) {
-  return "\n<h1> TwoFlower</h1>\n<h2> Allowing those that have lost a loved one to grieve proactively.</h2>\n<h3> If you have lost someone dear, press BEREAVED to get started. If you would like to donate time or money to the Bereaved, please press BENEFACTOR</h3>\n<div class= \"choice\">\n  <button onclick=\"bereaved\">BEREAVED<button>\n  <button onclick=\"benefactor\">BENEFACTOR</button>\n</div>\n    \n";
-};
-
-exports.default = _default;
-},{"./Links":"components/pages/Links.js"}],"components/pages/Benefactor.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-} // Write HTML in Pages
-
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1> TwoFlower</h1>\n<h2> Would you like to donate Acts of Kindness or Money to the family of DECEASED?</h2>\n\n<div class= \"beneChoice\">\n  <button onclick=\"beneYes\">Yes</button>\n  <button onclick=\"beneNo\">No</button>\n</div>\n\n";
 };
 
@@ -199,13 +182,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Help the Bereaved Family with the help of TwoFlower</h1>\n<h3>What Acts of Kindness would you like to promise the Bereaved?</h3>\n<div class= \"formContainer\">\n<form>\n<label for=\"story\">Tell us your story:</label>\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n\n<input type=\"submit\">\n\n<textarea id=\"kindness1\" name=\"kindness1\"\n          rows=\"5\" cols=\"33\">\nAct of Kindness \n</textarea>\n<form action=\"/action_page.php\">Would you like to send money to help with the funeral?<input type=\"number\" name=\"quantity\" min=\"1\" max=\"5\">\n  <input type=\"submit\"> \n</form>  \n</form>\n</div>\n";
 };
 
@@ -218,13 +195,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
 };
 
@@ -237,14 +208,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
-  return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
+var _default = function _default() {
+  return "\n\n";
 };
 
 exports.default = _default;
@@ -256,13 +221,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<div id=\"container\">\n<div id = \"err\" class =\"center red\"></div>\n        <form id=\"login\">\n            <div>\n                <label>username: \n                    <input type=\"text\" name=\"usrName\" id=\"usrName\" autofocus placeholder=\"username\">\n                </label>\n            </div>\n            <div>\n                <label class= \"pass\" >password: \n                        <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"password\">\n                </label>\n            </div>\n         <div>   \n            <input class=\"center block\" type=\"submit\" value=\"Sign in\"  >\n        </div>\n        </form>\n        <div class = \"center\">\n            <ul><h3>\n            ".concat(buildNavHTML(state.links.secondary), "\n            </h3><ul>\n        </div>    \n    </div>\n    \n");
 };
 
@@ -275,13 +234,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Well, thank you for listening!</h1>\n<h2>Death is the reminder that there is life left to live.</h2>\n<h3>Here is a cat gif for your grieving pleasure.</h3>\n<div class=\"kitty\">\n  <img src=\"https://i.imgur.com/C2TyjIS.gif\" name=\"hellokitty\" value=\"cats\">\n</div>\n";
 }; // FEATURE: Implement Cat Gif API to display a random gif of a cat.
 
@@ -295,13 +248,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Do you want to know if you can help?</h1>\n<h3>Please enter the name of the deceased:</h3>\n<div class= \"formContainer\"></div>\n<form name=\"nameValid\" action=\"/action_page.php\" onsubmit=\"return validateForm()\" method=\"post\">\n<input type=\"text\" name=\"firstVerif\" value=\"First Name\">\n<input type=\"text\" name=\"lastVerif\" value=\"Last Name\">\n<input type=\"submit\" value=\"Submit\">\n</form>\n";
 }; // Enter the name of the deceased to access an array of dead people.
 
@@ -315,13 +262,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>TwoFlower</h1>\n<h2>Obituary for [Deceased Name Here]</h2>\n<h3>This will render the photo of the deceased</h3>\n<h3>This will render the obit</h3>\n<h3>This will render the remainder of the information of the DECEASED</h3>\n";
 };
 
@@ -334,13 +275,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n\n<h3>Please enter information for the DECEASED</h3>\n<div class=\"obituary\">\n  \n</div class= \"formContainer\">\n  <form action=\"/action_page.php\"> \n  Name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadFirst\" value=\"First Name\">\n  <br>\n  Last name of the Deaceased:<br>\n  <input type=\"text\" name=\"deadLast\" value=\"Last Name\">\n  <br><br>\n <textarea rows=10 cols=50 name=\"obit\" value=\"obit\">Enter a brief obituary</textarea>\n</form> \n  <label for=\"avatar\">Please choose a photo of the DECEASED</label>\n\n<input type=\"file\"\n       id=\"deadPhoto\" name=\"avatar\"\n       accept=\"image/png, image/jpeg\">\n\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n";
 };
 
@@ -353,13 +288,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Thank you from TwoFlower</h1>\n<h2>Your Acts of Kindness and generous donations will greatly help the grieving family of DECEASED NAME HERE</h2>\n";
 };
 
@@ -374,13 +303,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<h1>Necessary actions</h1>\n<h2>What can be done to help you in your time of need?</h2>\n<h3>Sometimes, all it takes is an ACT OF KINDNESS </h3>\n\n<div class=\"formContainer\">\n<form action=\"/action_page.php\"> \n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocOne\" value=\"Act of Kindness1\">\n  <br>\n  Favorable Action:<br>\n  <input type=\"text\" name=\"aocTwo\" value=\"Act of Kindness2\">\n  <br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form> \n</div>\n    \n";
 };
 
@@ -538,14 +461,6 @@ var _default = {
   'primary': [{
     'text': 'Home',
     'icon': 'fas fa-home'
-  }, {
-    'text': 'About',
-    'icon': 'fas fa-id-card-alt'
-  }, {
-    'text': 'Contact',
-    'icon': 'fas fa-phone'
-  }, {
-    'text': 'Blog'
   }]
 };
 exports.default = _default;
@@ -21801,21 +21716,31 @@ function handleRoutes(params) {
 
 router.on(':path', handleRoutes).on('/', function () {
   return render(states.Home);
-}).resolve(); // // For Bereaved and Benefactor buttons
-// function bereaved() {
-//     render(states.bereaved)
-// };
-// function benefactor() {
-//     render(states.benefactor)
-// };
-// // For Benefactor yes/no question
-// function beneYes() {
-//     render(states.BenefactorYes)
-// };
-// function beneNo() {
-//     render(states.BenefactorNope)
-// };
-// // For validating name of DECEASED
+}).resolve(); // Animations init
+
+new WOW().init(); // For Bereaved and Benefactor buttons
+
+var bereave = document.querySelector('#bereaved');
+bereave.addEventListener('click', function (e) {
+  e.preventDefault();
+  render(states.Bereaved);
+});
+var benefact = document.querySelector('#benefactor');
+benefact.addEventListener('click', function (e) {
+  e.preventDefault();
+  render(states.Benefactor);
+}); // For Benefactor yes/no question
+
+var beneY = document.querySelector('#beneYes');
+beneY.addEventListener('click', function (e) {
+  e.preventDefault();
+  render(states.BenefactorYes);
+});
+var beneN = document.querySelector('#beneNo');
+beneN.addEventListener('click', function (e) {
+  e.preventDefault();
+  render(states.BenefactorForm);
+}); // // For validating name of DECEASED
 // function validateForm() {
 //     const x = document.forms["nameValid"]["firstVerif"].value;
 //     const y = document.forms["nameValid"]["lastVerif"].value;
@@ -21922,7 +21847,7 @@ _axios.default.get('https://jsonplaceholder.typicode.com/posts').then(function (
     console.log(states);
   }
 });
-},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/15968/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js","axios":"node_modules/axios/index.js"}],"../../../AppData/Roaming/npm-cache/_npx/22636/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -21950,7 +21875,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63554" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50569" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -22125,5 +22050,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/15968/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/22636/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.js.map

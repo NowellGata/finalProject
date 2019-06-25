@@ -1,13 +1,4 @@
-function buildNavHTML(stateLinks) {
-    return stateLinks
-        .map(
-            (link) =>
-            `<li><a href="/${link.text.toLowerCase()}" data-navigo>${link.text}</a></li>`
-        )
-        .join(' ');
-}
-
-export default (state) => `
+export default () => `
 <h1>Do you want to know if you can help?</h1>
 <h3>Please enter the name of the deceased:</h3>
 <div class= "formContainer"></div>

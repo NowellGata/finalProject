@@ -8,7 +8,7 @@ function buildNavHTML(stateLinks) {
 export default (state) => `
   <nav>
   <ul>
-    ${buildNavHTML(state.links.primary)}
+    
   </ul>
   </nav>
 `;
