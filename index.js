@@ -6,7 +6,7 @@ import * as states from './store';
 
 import { capitalize } from 'lodash';
 import Navigo from 'navigo';
-import axios from 'axios';
+// import axios from 'axios';
 // import ObitEmail from './components/pages/ObitEmail';
 
 // router is required to help our router handle localhost addresses
@@ -22,6 +22,7 @@ function render(state) {
 `;
 
     router.updatePageLinks();
+    clickHandler(state);
 }
 
 function handleRoutes(params) {
@@ -32,36 +33,70 @@ router
     .on(':path', (handleRoutes))
     .on('/', () => render(states.Home))
     .resolve();
+// // Create function to manage clicks on 
+// function clickHandler(state) {
+//     if (state.pageContent === "Benefactor") {
 
-// // Animations init
-// new WOW().init();
+//         console.log("howdy!");
+//         // For Benefactor.js yes/no question
+//         const howdyHoo = document.querySelector('#beneName');
+//         console.log(howdyHoo);
+//         howdyHoo.addEventListener('submit', (e) => {
+//             e.preventDefault();
+//             render(state.Home);
+//         });
+//     };
 
-// For Bereaved and Benefactor buttons
+//     if (state.pageContent === "Benefactor") {
+//         const beneBye = document.querySelector('#beneBye');
+//         beneBye.addEventListener('submit', (e) => {
+//             e.preventDefault();
+//             render(states.Home);
+//         })
+//     };
+// };
+
+
+
+
+// axios
+//     .get('https://jsonplaceholder.typicode.com/posts')
+//     .then((response) => {
+//         console.log('before each');
+//         response.data.forEach((post) => states.Blog.posts.push(post));
+//         if (router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog') {
+//             render(states.Blog);
+//             console.log(states);
+//         }
+//     });
+
+
+
+// Refactor event listeners one of these days...
+// For Home.js Bereaved and Benefactor buttons
 const bereave = document.querySelector('#bereaved');
 bereave.addEventListener('click', (e) => {
     e.preventDefault();
     render(states.Bereaved);
-})
+});
 
 const benefact = document.querySelector('#benefactor');
 benefact.addEventListener('click', (e) => {
     e.preventDefault();
     render(states.Benefactor);
-})
+});
 
 
-// For Benefactor yes/no question
-const beneY = document.querySelector('#beneYes');
-beneY.addEventListener('click', (e) => {
-    e.preventDefault();
-    render(states.BenefactorName);
-})
+// if (pageContent === "Benefactor") {
+//     console.log("howdy!");
+//     // For Benefactor.js yes/no question
+//     const beneName = document.querySelector('#Yes');
+//     beneName.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         render(states.BenefactorName);
+//     });
+// };
 
-const beneN = document.querySelector('#beneNo');
-beneN.addEventListener('click', (e) => {
-    e.preventDefault();
-    render(states.BenefactorForm);
-})
 
 // // For validating name of DECEASED
 // function validateForm() {
@@ -77,6 +112,10 @@ beneN.addEventListener('click', (e) => {
 //         `<h3> is the name of the deceased. Would you like to donate?</h3>`;
 //     }
 // }
+
+
+// PAYPAL API --> Github will not accept the sandbox version due to it being a public account containing sensitive information.
+// Workaround idea: Export information to a server-side database in order to use API.
 
 // const express = require('express');
 // const ejs = require('ejs');
@@ -171,14 +210,3 @@ beneN.addEventListener('click', (e) => {
 
 // INCLUDE ALL EVENT LISTENER CLICKS
 // DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
-
-axios
-    .get('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => {
-        console.log('before each');
-        response.data.forEach((post) => states.Blog.posts.push(post));
-        if (router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog') {
-            render(states.Blog);
-            console.log(states);
-        }
-    });

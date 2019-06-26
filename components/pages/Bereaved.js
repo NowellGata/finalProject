@@ -2,7 +2,7 @@ export default () => `
 <html>
 <body>
 <div class= "jumbotron">
-<form class="form-horizontal" action="https://formspree.io/email@domain.tld" method="POST" />
+<form class="form-horizontal" action="https://formspree.io/nowell.gata@gmail.com" method="POST" />
 
 <!-- Form Name -->
 <legend>Obituary</legend>
@@ -45,7 +45,7 @@ export default () => `
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton">Submit</label>
   <div class="col-md-4">
-    <button id="dead" name="singlebutton" class="btn btn-primary">Submit</button>
+    <button id="dead" name="singlebutton" class="btn btn-primary" value="send">Submit</button>
   </div>
 </div>
 

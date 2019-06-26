@@ -15,7 +15,7 @@ export default () => `
                     <h1 class="h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>TwoFlower</strong></h1>
                     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
                     <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Grieve Proactively</strong></h5>
-                    <h6 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>If you've recently lose someone, and would like express a need for aid, please click BEREAVED. If you would like to donate to a family that's recently lost someone, click BENEFACTOR.</strong></h6>
+                    <h6 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>If you've recently lost someone, and would like express a need for aid, please click BEREAVED. If you would like to donate to a family that's recently lost someone, click BENEFACTOR.</strong></h6>
                     <button type="button" id="bereaved" class="btn btn-outline-light">BEREAVED</button>                   
                     <button type="button" id="benefactor" class="btn btn-outline-light">BENEFACTOR</button>
                     
