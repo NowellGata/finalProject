@@ -1,7 +1,7 @@
 import links from './Links';
 
 export default {
-    'pageContent': 'ObitEmail',
-    'title': 'ObitEmail',
+    'pageContent': 'Obitemail',
+    'title': 'Obitemail',
     'link': links,
 };

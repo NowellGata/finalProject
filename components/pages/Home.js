@@ -18,8 +18,7 @@ export default () => `
                     <h6 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>If you've recently lost someone, and would like express a need for aid, please click BEREAVED. If you would like to donate to a family that's recently lost someone, click BENEFACTOR.</strong></h6>
                     <button type="button" id="bereaved" class="btn btn-outline-light">BEREAVED</button>                   
                     <button type="button" id="benefactor" class="btn btn-outline-light">BENEFACTOR</button>
-                    
-                  </div>
+                    </div>
                   <!--Grid column-->
                 </div>
                 <!--Grid row-->

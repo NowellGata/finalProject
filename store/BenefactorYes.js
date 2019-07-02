@@ -1,7 +1,7 @@
 import links from './Links';
 
 export default {
-    'pageContent': 'BenefactorYes',
-    'title': 'BenefactorYes',
+    'pageContent': 'Benefactoryes',
+    'title': 'Benefactoryes',
     'link': links,
 };

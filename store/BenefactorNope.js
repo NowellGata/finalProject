@@ -1,7 +1,7 @@
 import links from './Links';
 
 export default {
-    'pageContent': 'BenefactorNope',
-    'title': 'BenefactorNope',
+    'pageContent': 'Benefactornope',
+    'title': 'Benefactornope',
     'link': links,
 };

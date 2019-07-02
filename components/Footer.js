@@ -28,8 +28,8 @@ export default () => `
             <div class="col-md-4 col-xl-3">
               <h5>Links</h5>
               <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="https://ngataportfolio.netlify.com">About</a></li>
+                <li><a href="https://ngataportfolio.netlify.com/blog">Blog</a></li>
                </ul>
             </div>
           </div>
@@ -37,8 +37,3 @@ export default () => `
        </footer>
 
 `;
-//  <
-// div id = "footer" >
-//     &
-//     copy: 2019 Nowell Gata <
-//     /div>

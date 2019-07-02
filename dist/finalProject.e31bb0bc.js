@@ -125,13 +125,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function buildNavHTML(stateLinks) {
-  return stateLinks.map(function (link) {
-    return "<li><a href=\"/".concat(link.text.toLowerCase(), "\" data-navigo>").concat(link.text, "</a></li>");
-  }).join(' ');
-}
-
-var _default = function _default(state) {
+var _default = function _default() {
   return "\n<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"#\"><strong>TwoFlower</strong></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent-7\" aria-controls=\"navbarSupportedContent-7\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent-7\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"https://vigorous-kilby-054661.netlify.com/\">About</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"https://vigorous-kilby-054661.netlify.com/blog\">Blog</a>\n        </li>\n      </ul>\n      <form class=\"form-inline\">\n       \n      </form>\n    </div>\n  </div>\n</nav>\n<!-- Navbar -->\n";
 };
 
@@ -145,7 +139,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<body>\n<header>\n          \n          <!-- Full Page Intro -->\n          <div class=\"view\" style=\"background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;\">\n            <!-- Mask & flexbox options-->\n            <div class=\"mask rgba-black-light align-items-center\">\n              <!-- Content -->\n              <div class=\"container\">\n                <!--Grid row-->\n                <div class=\"row\">\n                  <!--Grid column-->\n                  <div class=\"col-md-12 mb-4 white-text text-center\">\n                    <h1 class=\"h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown\" data-wow-delay=\"0.3s\"><strong>TwoFlower</strong></h1>\n                    <hr class=\"hr-light my-4 wow fadeInDown\" data-wow-delay=\"0.4s\">\n                    <h5 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>Grieve Proactively</strong></h5>\n                    <h6 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>If you've recently lost someone, and would like express a need for aid, please click BEREAVED. If you would like to donate to a family that's recently lost someone, click BENEFACTOR.</strong></h6>\n                    <button type=\"button\" id=\"bereaved\" class=\"btn btn-outline-light\">BEREAVED</button>                   \n                    <button type=\"button\" id=\"benefactor\" class=\"btn btn-outline-light\">BENEFACTOR</button>\n                    \n                  </div>\n                  <!--Grid column-->\n                </div>\n                <!--Grid row-->\n              </div>\n              <!-- Content -->\n            </div>\n            <!-- Mask & flexbox options-->\n          </div>\n          <!-- Full Page Intro -->\n        </header>\n        <!-- Main navigation -->\n        <!--Main Layout-->\n        <main>\n          <div class=\"container\">\n            <!--Grid row-->\n            <div class=\"row py-5\">\n              <!--Grid column-->\n              <div class=\"col-md-12 text-center\">\n                <p>An unexpected death is tough for any family. It can certainly be tough asking for help in this time of need.</p>\n                <p>This is where TwoFlower comes in. This app is designed as a crowdfunding platform so that the grieving can get through the death of a loved one...</p>\n                <p></p>\n                <p>And on with the rest of their lives...</p>\n              </div>\n\n              <div class=\"col-md-12 text-center\" position=\"center\">\n                    <img src=\"https://i.imgur.com/mhDbt7J.png\" class=\"rounded\" alt=\"...\">\n                    </div>\n              <!--Grid column-->\n            </div>\n            <!--Grid row-->\n          </div>\n        </main>\n        <!--Main Layout-->\n\n\n\n</body>\n\n    \n";
+  return "\n<body>\n<header>\n          \n          <!-- Full Page Intro -->\n          <div class=\"view\" style=\"background-image: url('https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;\">\n            <!-- Mask & flexbox options-->\n            <div class=\"mask rgba-black-light align-items-center\">\n              <!-- Content -->\n              <div class=\"container\">\n                <!--Grid row-->\n                <div class=\"row\">\n                  <!--Grid column-->\n                  <div class=\"col-md-12 mb-4 white-text text-center\">\n                    <h1 class=\"h1-responsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown\" data-wow-delay=\"0.3s\"><strong>TwoFlower</strong></h1>\n                    <hr class=\"hr-light my-4 wow fadeInDown\" data-wow-delay=\"0.4s\">\n                    <h5 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>Grieve Proactively</strong></h5>\n                    <h6 class=\"text-uppercase mb-4 white-text wow fadeInDown\" data-wow-delay=\"0.4s\"><strong>If you've recently lost someone, and would like express a need for aid, please click BEREAVED. If you would like to donate to a family that's recently lost someone, click BENEFACTOR.</strong></h6>\n                    <button type=\"button\" id=\"bereaved\" class=\"btn btn-outline-light\">BEREAVED</button>                   \n                    <button type=\"button\" id=\"benefactor\" class=\"btn btn-outline-light\">BENEFACTOR</button>\n                    </div>\n                  <!--Grid column-->\n                </div>\n                <!--Grid row-->\n              </div>\n              <!-- Content -->\n            </div>\n            <!-- Mask & flexbox options-->\n          </div>\n          <!-- Full Page Intro -->\n        </header>\n        <!-- Main navigation -->\n        <!--Main Layout-->\n        <main>\n          <div class=\"container\">\n            <!--Grid row-->\n            <div class=\"row py-5\">\n              <!--Grid column-->\n              <div class=\"col-md-12 text-center\">\n                <p>An unexpected death is tough for any family. It can certainly be tough asking for help in this time of need.</p>\n                <p>This is where TwoFlower comes in. This app is designed as a crowdfunding platform so that the grieving can get through the death of a loved one...</p>\n                <p></p>\n                <p>And on with the rest of their lives...</p>\n              </div>\n\n              <div class=\"col-md-12 text-center\" position=\"center\">\n                    <img src=\"https://i.imgur.com/mhDbt7J.png\" class=\"rounded\" alt=\"...\">\n                    </div>\n              <!--Grid column-->\n            </div>\n            <!--Grid row-->\n          </div>\n        </main>\n        <!--Main Layout-->\n\n\n\n</body>\n\n    \n";
 };
 
 exports.default = _default;
@@ -169,12 +163,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _default = function _default() {
-  return "\n<div class= \"jumbotron\">\n<body>\n<h1 class=\"display-1\">TwoFlower</h1>\n<h1 class=\"display-4\">Would you like to donate Acts of Kindness to the bereaved? </h1>\n<div id= \"howdy\">\n<input type=\"submit\" id=\"beneName\" class=\"btn btn-outline-light\" value=\"Yes\"></input>                   \n<button type=\"submit\" id=\"beneBye\" class=\"btn btn-outline-light\">No</button>\n</div>\n</body>\n</div>\n;";
+function buildNavHTML(stateLinks) {
+  return stateLinks.map(function (link) {
+    return "<button type=\"".concat(link.type, "\" id=\"").concat(link.id, "\" class=\"").concat(link.class, "\"> ").concat(link.text, "</button>");
+  }).join(' ');
+}
+
+var _default = function _default(state) {
+  return "\n<div class= \"jumbotron\">\n<body>\n<h1 class=\"display-1\">TwoFlower</h1>\n<h1 class=\"display-4\">Would you like to donate Acts of Kindness to the bereaved? </h1>\n".concat(buildNavHTML(state.link.secondary), "\n</body>\n</div>\n;");
 };
 
 exports.default = _default;
-},{}],"components/pages/BenefactorDonate.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactordonate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -183,7 +183,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n\n";
+  return "\n<h1>TEST<h2>\n";
 }; // {/* <h1>Help the Bereaved Family with the help of TwoFlower</h1>
 // <h3>What Acts of Kindness would you like to promise the Bereaved?</h3>
 // <div class= "formContainer">
@@ -206,7 +206,7 @@ var _default = function _default() {
 
 
 exports.default = _default;
-},{}],"components/pages/BenefactorThanks.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactorthanks.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -219,7 +219,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"components/pages/BenefactorForm.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactorform.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -232,7 +232,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"components/pages/BenefactorYes.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactoryes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -245,7 +245,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"components/pages/BenefactorNope.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactornope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -259,7 +259,7 @@ var _default = function _default() {
 
 
 exports.default = _default;
-},{}],"components/pages/BenefactorName.js":[function(require,module,exports) {
+},{}],"components/pages/Benefactorname.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -345,7 +345,7 @@ var _default = function _default() {
 
 
 exports.default = _default;
-},{}],"components/pages/ObitSubmitted.js":[function(require,module,exports) {
+},{}],"components/pages/Obitsubmitted.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -358,9 +358,9 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"components/pages/ObitHomeLink.js":[function(require,module,exports) {
+},{}],"components/pages/Obithomelink.js":[function(require,module,exports) {
 // This will redirect USER to HOME
-},{}],"components/pages/ObitEmail.js":[function(require,module,exports) {
+},{}],"components/pages/Obitemail.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -391,40 +391,40 @@ Object.defineProperty(exports, "Benefactor", {
     return _Benefactor.default;
   }
 });
-Object.defineProperty(exports, "BenefactorDonate", {
+Object.defineProperty(exports, "Benefactordonate", {
   enumerable: true,
   get: function () {
-    return _BenefactorDonate.default;
+    return _Benefactordonate.default;
   }
 });
-Object.defineProperty(exports, "BenefactorThanks", {
+Object.defineProperty(exports, "Benefactorthanks", {
   enumerable: true,
   get: function () {
-    return _BenefactorThanks.default;
+    return _Benefactorthanks.default;
   }
 });
-Object.defineProperty(exports, "BenefactorForm", {
+Object.defineProperty(exports, "Benefactorform", {
   enumerable: true,
   get: function () {
-    return _BenefactorForm.default;
+    return _Benefactorform.default;
   }
 });
-Object.defineProperty(exports, "BenefactorYes", {
+Object.defineProperty(exports, "Benefactoryes", {
   enumerable: true,
   get: function () {
-    return _BenefactorYes.default;
+    return _Benefactoryes.default;
   }
 });
-Object.defineProperty(exports, "BenefactorNope", {
+Object.defineProperty(exports, "Benefactornope", {
   enumerable: true,
   get: function () {
-    return _BenefactorNope.default;
+    return _Benefactornope.default;
   }
 });
-Object.defineProperty(exports, "BenefactorName", {
+Object.defineProperty(exports, "Benefactorname", {
   enumerable: true,
   get: function () {
-    return _BenefactorName.default;
+    return _Benefactorname.default;
   }
 });
 Object.defineProperty(exports, "Obituary", {
@@ -439,22 +439,22 @@ Object.defineProperty(exports, "Bereaved", {
     return _Bereaved.default;
   }
 });
-Object.defineProperty(exports, "ObitSubmitted", {
+Object.defineProperty(exports, "Obitsubmitted", {
   enumerable: true,
   get: function () {
-    return _ObitSubmitted.default;
+    return _Obitsubmitted.default;
   }
 });
-Object.defineProperty(exports, "ObitHomeLink", {
+Object.defineProperty(exports, "Obithomelink", {
   enumerable: true,
   get: function () {
-    return _ObitHomeLink.default;
+    return _Obithomelink.default;
   }
 });
-Object.defineProperty(exports, "ObitEmail", {
+Object.defineProperty(exports, "Obitemail", {
   enumerable: true,
   get: function () {
-    return _ObitEmail.default;
+    return _Obitemail.default;
   }
 });
 
@@ -462,30 +462,30 @@ var _Home = _interopRequireDefault(require("./Home"));
 
 var _Benefactor = _interopRequireDefault(require("./Benefactor"));
 
-var _BenefactorDonate = _interopRequireDefault(require("./BenefactorDonate"));
+var _Benefactordonate = _interopRequireDefault(require("./Benefactordonate"));
 
-var _BenefactorThanks = _interopRequireDefault(require("./BenefactorThanks"));
+var _Benefactorthanks = _interopRequireDefault(require("./Benefactorthanks"));
 
-var _BenefactorForm = _interopRequireDefault(require("./BenefactorForm"));
+var _Benefactorform = _interopRequireDefault(require("./Benefactorform"));
 
-var _BenefactorYes = _interopRequireDefault(require("./BenefactorYes"));
+var _Benefactoryes = _interopRequireDefault(require("./Benefactoryes"));
 
-var _BenefactorNope = _interopRequireDefault(require("./BenefactorNope"));
+var _Benefactornope = _interopRequireDefault(require("./Benefactornope"));
 
-var _BenefactorName = _interopRequireDefault(require("./BenefactorName"));
+var _Benefactorname = _interopRequireDefault(require("./Benefactorname"));
 
 var _Obituary = _interopRequireDefault(require("./Obituary"));
 
 var _Bereaved = _interopRequireDefault(require("./Bereaved"));
 
-var _ObitSubmitted = _interopRequireDefault(require("./ObitSubmitted"));
+var _Obitsubmitted = _interopRequireDefault(require("./Obitsubmitted"));
 
-var _ObitHomeLink = _interopRequireDefault(require("./ObitHomeLink"));
+var _Obithomelink = _interopRequireDefault(require("./Obithomelink"));
 
-var _ObitEmail = _interopRequireDefault(require("./ObitEmail"));
+var _Obitemail = _interopRequireDefault(require("./Obitemail"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"components/pages/Home.js","./Benefactor":"components/pages/Benefactor.js","./BenefactorDonate":"components/pages/BenefactorDonate.js","./BenefactorThanks":"components/pages/BenefactorThanks.js","./BenefactorForm":"components/pages/BenefactorForm.js","./BenefactorYes":"components/pages/BenefactorYes.js","./BenefactorNope":"components/pages/BenefactorNope.js","./BenefactorName":"components/pages/BenefactorName.js","./Obituary":"components/pages/Obituary.js","./Bereaved":"components/pages/Bereaved.js","./ObitSubmitted":"components/pages/ObitSubmitted.js","./ObitHomeLink":"components/pages/ObitHomeLink.js","./ObitEmail":"components/pages/ObitEmail.js"}],"components/Content.js":[function(require,module,exports) {
+},{"./Home":"components/pages/Home.js","./Benefactor":"components/pages/Benefactor.js","./Benefactordonate":"components/pages/Benefactordonate.js","./Benefactorthanks":"components/pages/Benefactorthanks.js","./Benefactorform":"components/pages/Benefactorform.js","./Benefactoryes":"components/pages/Benefactoryes.js","./Benefactornope":"components/pages/Benefactornope.js","./Benefactorname":"components/pages/Benefactorname.js","./Obituary":"components/pages/Obituary.js","./Bereaved":"components/pages/Bereaved.js","./Obitsubmitted":"components/pages/Obitsubmitted.js","./Obithomelink":"components/pages/Obithomelink.js","./Obitemail":"components/pages/Obitemail.js"}],"components/Content.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -515,13 +515,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<footer class=\"section footer-classic context-dark bg-image\" style=\"background: #2d3246;\">\n        <div class=\"container\">\n          <div class=\"row row-30\">\n            <div class=\"col-md-4 col-xl-5\">\n              <div class=\"pr-xl-4\"><a class=\"brand\" href=\"index.html\"><img class=\"brand-logo-light\" src=\"images/agency/logo-inverse-140x37.png\" alt=\"\" width=\"140\" height=\"37\" srcset=\"images/agency/logo-retina-inverse-280x74.png 2x\"></a>\n                <p>While we can't always ease the pain of losing a loved one, we can certainly ease the burden with human connection.</p>\n                <!-- Rights-->\n                <p class=\"rights\"><span>\xA9\xA0 </span><span class=\"copyright-year\">2019</span><span>\xA0</span><span>ATAG Creative</span><span>.\xA0</span><span>All Rights Reserved.</span></p>\n              </div>\n            </div>\n            <div class=\"col-md-4\">\n              <h5>Contacts</h5>\n              <dl class=\"contact-list\">\n                <dt>Address:</dt>\n                <dd>420 Paper Street, St. Louis, MO</dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>email:</dt>\n                <dd><a href=\"mailto:nowell.gata@gmail.com\">nowell.gata@gmail.com</a></dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>phones:</dt>\n                <dd><a href=\"tel:#\">314.781.8188</a> <span>or</span> <a href=\"tel:#\">314.867.5309</a>\n                </dd>\n              </dl>\n            </div>\n            <div class=\"col-md-4 col-xl-3\">\n              <h5>Links</h5>\n              <ul class=\"nav-list\">\n                <li><a href=\"#\">About</a></li>\n                <li><a href=\"#\">Blog</a></li>\n               </ul>\n            </div>\n          </div>\n        </div>\n       </footer>\n\n";
-}; //  <
-// div id = "footer" >
-//     &
-//     copy: 2019 Nowell Gata <
-//     /div>
-
+  return "\n<footer class=\"section footer-classic context-dark bg-image\" style=\"background: #2d3246;\">\n        <div class=\"container\">\n          <div class=\"row row-30\">\n            <div class=\"col-md-4 col-xl-5\">\n              <div class=\"pr-xl-4\"><a class=\"brand\" href=\"index.html\"><img class=\"brand-logo-light\" src=\"images/agency/logo-inverse-140x37.png\" alt=\"\" width=\"140\" height=\"37\" srcset=\"images/agency/logo-retina-inverse-280x74.png 2x\"></a>\n                <p>While we can't always ease the pain of losing a loved one, we can certainly ease the burden with human connection.</p>\n                <!-- Rights-->\n                <p class=\"rights\"><span>\xA9\xA0 </span><span class=\"copyright-year\">2019</span><span>\xA0</span><span>ATAG Creative</span><span>.\xA0</span><span>All Rights Reserved.</span></p>\n              </div>\n            </div>\n            <div class=\"col-md-4\">\n              <h5>Contacts</h5>\n              <dl class=\"contact-list\">\n                <dt>Address:</dt>\n                <dd>420 Paper Street, St. Louis, MO</dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>email:</dt>\n                <dd><a href=\"mailto:nowell.gata@gmail.com\">nowell.gata@gmail.com</a></dd>\n              </dl>\n              <dl class=\"contact-list\">\n                <dt>phones:</dt>\n                <dd><a href=\"tel:#\">314.781.8188</a> <span>or</span> <a href=\"tel:#\">314.867.5309</a>\n                </dd>\n              </dl>\n            </div>\n            <div class=\"col-md-4 col-xl-3\">\n              <h5>Links</h5>\n              <ul class=\"nav-list\">\n                <li><a href=\"https://ngataportfolio.netlify.com\">About</a></li>\n                <li><a href=\"https://ngataportfolio.netlify.com/blog\">Blog</a></li>\n               </ul>\n            </div>\n          </div>\n        </div>\n       </footer>\n\n";
+};
 
 exports.default = _default;
 },{}],"store/Links.js":[function(require,module,exports) {
@@ -535,6 +530,17 @@ var _default = {
   'primary': [{
     'text': 'Home',
     'icon': 'fas fa-home'
+  }],
+  'secondary': [{
+    'text': 'Yes',
+    'type': 'submit',
+    'id': 'beneName',
+    'class': 'btn btn-outline-light'
+  }, {
+    'text': 'No',
+    'type': 'submit',
+    'id': 'beneBye',
+    'class': 'btn btn-outline-light'
   }]
 };
 exports.default = _default;
@@ -574,7 +580,7 @@ var _default = {
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorDonate.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactordonate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -587,12 +593,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorDonate',
-  'title': 'BenefactorDonate',
+  'pageContent': 'Benefactordonate',
+  'title': 'Benefactordonate',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorThanks.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactorthanks.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -605,12 +611,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorThanks',
-  'title': 'BenefactorThanks',
+  'pageContent': 'Benefactorthanks',
+  'title': 'Benefactorthanks',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorForm.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactorform.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -623,12 +629,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorForm',
-  'title': 'BenefactorForm',
+  'pageContent': 'Benefactorform',
+  'title': 'Benefactorform',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorYes.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactoryes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -641,12 +647,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorYes',
-  'title': 'BenefactorYes',
+  'pageContent': 'Benefactoryes',
+  'title': 'Benefactoryes',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorNope.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactornope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -659,12 +665,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorNope',
-  'title': 'BenefactorNope',
+  'pageContent': 'Benefactornope',
+  'title': 'Benefactornope',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/BenefactorName.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Benefactorname.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -677,8 +683,8 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'BenefactorName',
-  'title': 'BenefactorName',
+  'pageContent': 'Benefactorname',
+  'title': 'Benefactorname',
   'link': _Links.default
 };
 exports.default = _default;
@@ -718,7 +724,7 @@ var _default = {
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/ObitSubmitted.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Obitsubmitted.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -731,12 +737,12 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'ObitSubmitted',
-  'title': 'ObitSubmitted',
+  'pageContent': 'Obitsubmitted',
+  'title': 'Obitsubmitted',
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/ObitHomeLink.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Obithomelink.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -754,7 +760,7 @@ var _default = {
   'link': _Links.default
 };
 exports.default = _default;
-},{"./Links":"store/Links.js"}],"store/ObitEmail.js":[function(require,module,exports) {
+},{"./Links":"store/Links.js"}],"store/Obitemail.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -767,8 +773,8 @@ var _Links = _interopRequireDefault(require("./Links"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  'pageContent': 'ObitEmail',
-  'title': 'ObitEmail',
+  'pageContent': 'Obitemail',
+  'title': 'Obitemail',
   'link': _Links.default
 };
 exports.default = _default;
@@ -790,40 +796,40 @@ Object.defineProperty(exports, "Benefactor", {
     return _Benefactor.default;
   }
 });
-Object.defineProperty(exports, "BenefactorDonate", {
+Object.defineProperty(exports, "Benefactordonate", {
   enumerable: true,
   get: function () {
-    return _BenefactorDonate.default;
+    return _Benefactordonate.default;
   }
 });
-Object.defineProperty(exports, "BenefactorThanks", {
+Object.defineProperty(exports, "Benefactorthanks", {
   enumerable: true,
   get: function () {
-    return _BenefactorThanks.default;
+    return _Benefactorthanks.default;
   }
 });
-Object.defineProperty(exports, "BenefactorForm", {
+Object.defineProperty(exports, "Benefactorform", {
   enumerable: true,
   get: function () {
-    return _BenefactorForm.default;
+    return _Benefactorform.default;
   }
 });
-Object.defineProperty(exports, "BenefactorYes", {
+Object.defineProperty(exports, "Benefactoryes", {
   enumerable: true,
   get: function () {
-    return _BenefactorYes.default;
+    return _Benefactoryes.default;
   }
 });
-Object.defineProperty(exports, "BenefactorNope", {
+Object.defineProperty(exports, "Benefactornope", {
   enumerable: true,
   get: function () {
-    return _BenefactorNope.default;
+    return _Benefactornope.default;
   }
 });
-Object.defineProperty(exports, "BenefactorName", {
+Object.defineProperty(exports, "Benefactorname", {
   enumerable: true,
   get: function () {
-    return _BenefactorName.default;
+    return _Benefactorname.default;
   }
 });
 Object.defineProperty(exports, "Obituary", {
@@ -838,22 +844,22 @@ Object.defineProperty(exports, "Bereaved", {
     return _Bereaved.default;
   }
 });
-Object.defineProperty(exports, "ObitSubmitted", {
+Object.defineProperty(exports, "Obitsubmitted", {
   enumerable: true,
   get: function () {
-    return _ObitSubmitted.default;
+    return _Obitsubmitted.default;
   }
 });
-Object.defineProperty(exports, "ObitHomeLink", {
+Object.defineProperty(exports, "Obithomelink", {
   enumerable: true,
   get: function () {
-    return _ObitHomeLink.default;
+    return _Obithomelink.default;
   }
 });
-Object.defineProperty(exports, "ObitEmail", {
+Object.defineProperty(exports, "Obitemail", {
   enumerable: true,
   get: function () {
-    return _ObitEmail.default;
+    return _Obitemail.default;
   }
 });
 
@@ -861,30 +867,30 @@ var _Home = _interopRequireDefault(require("./Home"));
 
 var _Benefactor = _interopRequireDefault(require("./Benefactor"));
 
-var _BenefactorDonate = _interopRequireDefault(require("./BenefactorDonate"));
+var _Benefactordonate = _interopRequireDefault(require("./Benefactordonate"));
 
-var _BenefactorThanks = _interopRequireDefault(require("./BenefactorThanks"));
+var _Benefactorthanks = _interopRequireDefault(require("./Benefactorthanks"));
 
-var _BenefactorForm = _interopRequireDefault(require("./BenefactorForm"));
+var _Benefactorform = _interopRequireDefault(require("./Benefactorform"));
 
-var _BenefactorYes = _interopRequireDefault(require("./BenefactorYes"));
+var _Benefactoryes = _interopRequireDefault(require("./Benefactoryes"));
 
-var _BenefactorNope = _interopRequireDefault(require("./BenefactorNope"));
+var _Benefactornope = _interopRequireDefault(require("./Benefactornope"));
 
-var _BenefactorName = _interopRequireDefault(require("./BenefactorName"));
+var _Benefactorname = _interopRequireDefault(require("./Benefactorname"));
 
 var _Obituary = _interopRequireDefault(require("./Obituary"));
 
 var _Bereaved = _interopRequireDefault(require("./Bereaved"));
 
-var _ObitSubmitted = _interopRequireDefault(require("./ObitSubmitted"));
+var _Obitsubmitted = _interopRequireDefault(require("./Obitsubmitted"));
 
-var _ObitHomeLink = _interopRequireDefault(require("./ObitHomeLink"));
+var _Obithomelink = _interopRequireDefault(require("./Obithomelink"));
 
-var _ObitEmail = _interopRequireDefault(require("./ObitEmail"));
+var _Obitemail = _interopRequireDefault(require("./Obitemail"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./Benefactor":"store/Benefactor.js","./BenefactorDonate":"store/BenefactorDonate.js","./BenefactorThanks":"store/BenefactorThanks.js","./BenefactorForm":"store/BenefactorForm.js","./BenefactorYes":"store/BenefactorYes.js","./BenefactorNope":"store/BenefactorNope.js","./BenefactorName":"store/BenefactorName.js","./Obituary":"store/Obituary.js","./Bereaved":"store/Bereaved.js","./ObitSubmitted":"store/ObitSubmitted.js","./ObitHomeLink":"store/ObitHomeLink.js","./ObitEmail":"store/ObitEmail.js"}],"../../../AppData/Roaming/npm-cache/_npx/21228/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./Benefactor":"store/Benefactor.js","./Benefactordonate":"store/Benefactordonate.js","./Benefactorthanks":"store/Benefactorthanks.js","./Benefactorform":"store/Benefactorform.js","./Benefactoryes":"store/Benefactoryes.js","./Benefactornope":"store/Benefactornope.js","./Benefactorname":"store/Benefactorname.js","./Obituary":"store/Obituary.js","./Bereaved":"store/Bereaved.js","./Obitsubmitted":"store/Obitsubmitted.js","./Obithomelink":"store/Obithomelink.js","./Obitemail":"store/Obitemail.js"}],"../../../AppData/Roaming/npm-cache/_npx/21228/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
 'use strict'
 
 exports.byteLength = byteLength
@@ -20068,7 +20074,6 @@ var root = document.querySelector('#root');
 function render(state) {
   root.innerHTML = "\n    ".concat((0, _Navigation.default)(state), "\n    ").concat((0, _Content.default)(state), "\n    ").concat((0, _Footer.default)(state), "\n");
   router.updatePageLinks();
-  clickHandler(state);
 }
 
 function handleRoutes(params) {
@@ -20077,155 +20082,25 @@ function handleRoutes(params) {
 
 router.on(':path', handleRoutes).on('/', function () {
   return render(states.Home);
-}).resolve(); // // Create function to manage clicks on 
-// function clickHandler(state) {
-//     if (state.pageContent === "Benefactor") {
-//         console.log("howdy!");
-//         // For Benefactor.js yes/no question
-//         const howdyHoo = document.querySelector('#beneName');
-//         console.log(howdyHoo);
-//         howdyHoo.addEventListener('submit', (e) => {
-//             e.preventDefault();
-//             render(state.Home);
-//         });
-//     };
-//     if (state.pageContent === "Benefactor") {
-//         const beneBye = document.querySelector('#beneBye');
-//         beneBye.addEventListener('submit', (e) => {
-//             e.preventDefault();
-//             render(states.Home);
-//         })
-//     };
-// };
-// axios
-//     .get('https://jsonplaceholder.typicode.com/posts')
-//     .then((response) => {
-//         console.log('before each');
-//         response.data.forEach((post) => states.Blog.posts.push(post));
-//         if (router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog') {
-//             render(states.Blog);
-//             console.log(states);
-//         }
-//     });
-// Refactor event listeners one of these days...
+}).resolve(); // Refactor event listeners one of these days...
 // For Home.js Bereaved and Benefactor buttons
 
 var bereave = document.querySelector('#bereaved');
 bereave.addEventListener('click', function (e) {
   e.preventDefault();
-  render(states.Bereaved);
+  location.href = '/bereaved';
 });
 var benefact = document.querySelector('#benefactor');
 benefact.addEventListener('click', function (e) {
   e.preventDefault();
-  render(states.Benefactor);
-}); // if (pageContent === "Benefactor") {
-//     console.log("howdy!");
-//     // For Benefactor.js yes/no question
-//     const beneName = document.querySelector('#Yes');
-//     beneName.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         render(states.BenefactorName);
-//     });
-// };
-// // For validating name of DECEASED
-// function validateForm() {
-//     const x = document.forms["nameValid"]["firstVerif"].value;
-//     const y = document.forms["nameValid"]["lastVerif"].value;
-//     // We may want to input a John Doe name here
-//     if (x !== "John") {
-//         alert("Check Deceased First Name");
-//         if (y !== "Doe") {
-//             alert("Check Deceased Last Name");
-//         }
-//         return (x, y)
-//         `<h3> is the name of the deceased. Would you like to donate?</h3>`;
-//     }
-// }
-// PAYPAL API --> Github will not accept the sandbox version due to it being a public account containing sensitive information.
-// Workaround idea: Export information to a server-side database in order to use API.
-// const express = require('express');
-// const ejs = require('ejs');
-// const paypal = require('paypal');
-// paypal.configure({
-//     'mode': 'sandbox', //sandbox or live
-//     'client_id': 'Ab_xtknbvX11aoyl93a4oyoyYxJ-sinQPzBILawktunp4PxSVoUKfQwCrLJaOfnpiIKxg1hwdYTGp-qC',
-//     'client_secret': 'EDMS_HqBDaOG-Q-FBTOaOXVIt24wa-XgdpkIq0mME7hxGNXxTexsEvGHhtflGNQ6WtwEa-tIRos75UH9'
-// });
-// const app = express();
-// app.set('view engine', 'ejs');
-// app.get('/', (req, res) => res.render('index'));
-// app.post('pay', (req, res) => {
-//     const create_payment_json = {
-//         "intent": "sale",
-//         "payer": {
-//             "payment_method": "paypal"
-//         },
-//         // Redirect assumption for http-server
-//         "redirect_urls": {
-//             "return_url": "http://localhost:8080/success",
-//             "cancel_url": "http://localhost:8080/cancel"
-//         },
-//         "transactions": [{
-//             "item_list": {
-//                 "items": [{
-//                     "name": "Donation",
-//                     "sku": "001",
-//                     "price": "25.00",
-//                     "currency": "USD",
-//                     "quantity": 1
-//                 }]
-//             },
-//             "amount": {
-//                 "currency": "USD",
-//                 "total": "25.00"
-//             },
-//             "description": "TwoFlower Donation"
-//         }]
-//     };
-//     paypal.payment.create(create_payment_json, function(error, payment) {
-//         if (error) {
-//             throw error;
-//         } else {
-//             for (let i = 0; 1 < payment.links.length; i++) {
-//                 if (payment.links[i].rel === 'approval_url') {
-//                     res.redirect(payment.links[i].href);
-//                 }
-//             }
-//             // console.log("Create Payment Response");
-//             // console.log(payment);
-//             // res.send('test');
-//         }
-//     });
-// });
-// app.get('/success', (req, res) => {
-//     const payerId = req.query.PayerID;
-//     const paymentID = req.query.paymentId;
-//     const execute_payment_json = {
-//         "payer_id": payerId,
-//         "transaction": [{
-//             "amount": {
-//                 "currency": "USD",
-//                 "total": "25.00"
-//             }
-//         }]
-//     };
-//     paypal.payment.execute(paymentID, execute_payment_json, function(error, payment) {
-//         if (error) {
-//             console.log(error.response);
-//             throw error;
-//         } else {
-//             console.log("Get payment response");
-//             console.log(JSON.stringify(payment));
-//             res.send('success');
-//         }
-//     });
-// });
-// app.get('/cancel', (req, res) => res.send('Cancelled'));
-// app.listen(3000, () => console.log('Server Started'));
-// INCLUDE ALL EVENT LISTENER CLICKS
-// DOCUMENT API LINK FOR: Mailchimp/Mandrill, PayPal
-},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js"}],"../../../AppData/Roaming/npm-cache/_npx/20176/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  location.href = '/benefactor';
+});
+var donateyes = document.querySelector('#beneName');
+donateyes.addEventListener('click', function (e) {
+  e.preventDefault();
+  location.href = '/benefactordonate';
+});
+},{"./components/Navigation":"components/Navigation.js","./components/Content":"components/Content.js","./components/Footer":"components/Footer.js","./store":"store/index.js","lodash":"node_modules/lodash/lodash.js","navigo":"node_modules/navigo/lib/navigo.min.js"}],"../../../AppData/Roaming/npm-cache/_npx/16580/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -20253,7 +20128,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54533" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51467" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -20428,5 +20303,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/20176/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/16580/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.js.map

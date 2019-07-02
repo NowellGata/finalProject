@@ -3,27 +3,27 @@ from './Home';
 // Benefactor 
 export { default as Benefactor }
 from './Benefactor';
-export { default as BenefactorDonate }
-from './BenefactorDonate';
-export { default as BenefactorThanks }
-from './BenefactorThanks';
-export { default as BenefactorForm }
-from './BenefactorForm';
-export { default as BenefactorYes }
-from './BenefactorYes';
-export { default as BenefactorNope }
-from './BenefactorNope';
-export { default as BenefactorName }
-from './BenefactorName';
+export { default as Benefactordonate }
+from './Benefactordonate';
+export { default as Benefactorthanks }
+from './Benefactorthanks';
+export { default as Benefactorform }
+from './Benefactorform';
+export { default as Benefactoryes }
+from './Benefactoryes';
+export { default as Benefactornope }
+from './Benefactornope';
+export { default as Benefactorname }
+from './Benefactorname';
 // Shared Obituary all should see
 export { default as Obituary }
 from './Obituary';
 // Bereaved
 export { default as Bereaved }
 from './Bereaved';
-export { default as ObitSubmitted }
-from './ObitSubmitted';
-export { default as ObitHomeLink }
-from './ObitHomeLink';
-export { default as ObitEmail }
-from './ObitEmail';
+export { default as Obitsubmitted }
+from './Obitsubmitted';
+export { default as Obithomelink }
+from './Obithomelink';
+export { default as Obitemail }
+from './Obitemail';

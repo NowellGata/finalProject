@@ -1,11 +1,4 @@
-function buildNavHTML(stateLinks) {
-    return stateLinks
-        .map((link) =>
-            `<li><a href="/${link.text.toLowerCase()}" data-navigo>${link.text}</a></li>`
-        )
-        .join(' ');
-}
-export default (state) => `
+export default () => `
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
   <div class="container">
